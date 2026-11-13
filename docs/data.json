@@ -18189,7 +18189,19 @@
     "TOTAL": "02:06:46.9",
     "_id": 409164,
     "_stage_id": 106,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Arūnas",
@@ -18217,7 +18229,21 @@
     "TOTAL": "02:16:33.5",
     "_id": 409181,
     "_stage_id": 106,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      98
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "3",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Paulius",
@@ -18245,7 +18271,19 @@
     "TOTAL": "02:16:52.8",
     "_id": 409182,
     "_stage_id": 106,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Žilvinas",
@@ -18273,7 +18311,19 @@
     "TOTAL": "02:19:56.0",
     "_id": 409187,
     "_stage_id": 106,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Nerijus",
@@ -18301,7 +18351,19 @@
     "TOTAL": "02:36:34.8",
     "_id": 409242,
     "_stage_id": 106,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Eglė",
@@ -18329,7 +18391,19 @@
     "TOTAL": "02:38:17.4",
     "_id": 409250,
     "_stage_id": 106,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Ignas",
@@ -18357,7 +18431,19 @@
     "TOTAL": "02:39:46.9",
     "_id": 409253,
     "_stage_id": 106,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Mantas",
@@ -18385,7 +18471,19 @@
     "TOTAL": "02:42:57.7",
     "_id": 409262,
     "_stage_id": 106,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Titas",
@@ -18413,7 +18511,19 @@
     "TOTAL": "02:48:26.7",
     "_id": 409278,
     "_stage_id": 106,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Albertas",
@@ -18441,7 +18551,19 @@
     "TOTAL": "02:48:32.9",
     "_id": 409279,
     "_stage_id": 106,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Mantas",
@@ -18469,7 +18591,21 @@
     "TOTAL": "02:52:03.3",
     "_id": 409293,
     "_stage_id": 106,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      98
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "19",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Aurimas",
@@ -18497,7 +18633,19 @@
     "TOTAL": "02:57:14.1",
     "_id": 409307,
     "_stage_id": 106,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Tomas",
@@ -18525,7 +18673,19 @@
     "TOTAL": "02:58:02.8",
     "_id": 409308,
     "_stage_id": 106,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Marija",
@@ -18553,7 +18713,21 @@
     "TOTAL": "03:11:25.1",
     "_id": 409340,
     "_stage_id": 106,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "M25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      98
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "5",
+    "_group_pos_estimated": true
   },
   {
     "CLUB": "HighPeaks Lietuva",
@@ -19743,7 +19917,21 @@
     "TOTAL": "01:16:13.4",
     "_id": 467731,
     "_stage_id": 112,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V45",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      114
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "2",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Mantas",
@@ -19771,7 +19959,22 @@
     "TOTAL": "01:19:49.6",
     "_id": 467748,
     "_stage_id": 112,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "10",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Arūnė",
@@ -19799,7 +20002,24 @@
     "TOTAL": "01:20:47.4",
     "_id": 467753,
     "_stage_id": 112,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "M25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113,
+      114,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "1",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Simas",
@@ -19827,7 +20047,23 @@
     "TOTAL": "01:21:44.3",
     "_id": 467756,
     "_stage_id": 112,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "13",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Giedrius",
@@ -19855,7 +20091,19 @@
     "TOTAL": "01:27:55.3",
     "_id": 467794,
     "_stage_id": 112,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Justas",
@@ -19883,7 +20131,22 @@
     "TOTAL": "01:29:55.5",
     "_id": 467807,
     "_stage_id": 112,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "30",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Dovydas",
@@ -19911,7 +20174,23 @@
     "TOTAL": "01:29:57.4",
     "_id": 467808,
     "_stage_id": 112,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "31",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Julius",
@@ -19939,7 +20218,19 @@
     "TOTAL": "01:31:00.6",
     "_id": 467814,
     "_stage_id": 112,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Rimvydas",
@@ -19967,7 +20258,19 @@
     "TOTAL": "01:37:19.1",
     "_id": 467850,
     "_stage_id": 112,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Marija",
@@ -19995,7 +20298,19 @@
     "TOTAL": "01:39:50.1",
     "_id": 467865,
     "_stage_id": 112,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Jolanta",
@@ -20050,7 +20365,23 @@
     "TOTAL": "02:05:48.6",
     "_id": 467423,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "*",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Povilas",
@@ -20078,7 +20409,21 @@
     "TOTAL": "02:12:13.1",
     "_id": 467429,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      114
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "3",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Žilvinas",
@@ -20106,7 +20451,23 @@
     "TOTAL": "02:14:20.6",
     "_id": 467434,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "6",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Povilas",
@@ -20134,7 +20495,19 @@
     "TOTAL": "02:16:29.8",
     "_id": 467437,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Arūnas",
@@ -20162,7 +20535,24 @@
     "TOTAL": "02:17:13.0",
     "_id": 467439,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113,
+      114,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "8",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Edgaras",
@@ -20190,7 +20580,22 @@
     "TOTAL": "02:25:37.2",
     "_id": 467461,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "14",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Donatas",
@@ -20218,7 +20623,24 @@
     "TOTAL": "02:26:05.0",
     "_id": 467463,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113,
+      114,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "16",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Mantas",
@@ -20246,7 +20668,21 @@
     "TOTAL": "02:28:14.5",
     "_id": 467475,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      113
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "22",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Gražvydas",
@@ -20274,7 +20710,22 @@
     "TOTAL": "02:30:30.5",
     "_id": 467483,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "24",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Povilas",
@@ -20302,7 +20753,23 @@
     "TOTAL": "02:30:36.0",
     "_id": 467484,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "25",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Ignas",
@@ -20330,7 +20797,19 @@
     "TOTAL": "02:34:09.0",
     "_id": 467507,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Benas",
@@ -20358,7 +20837,22 @@
     "TOTAL": "02:35:10.1",
     "_id": 467509,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "37",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Edvardas",
@@ -20386,7 +20880,19 @@
     "TOTAL": "02:36:07.9",
     "_id": 467518,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Gabrielius",
@@ -20414,7 +20920,21 @@
     "TOTAL": "02:37:56.9",
     "_id": 467525,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "43",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Oleg",
@@ -20442,7 +20962,19 @@
     "TOTAL": "02:40:21.6",
     "_id": 467539,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Aurimas",
@@ -20470,7 +21002,22 @@
     "TOTAL": "02:42:13.8",
     "_id": 467554,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V40",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "15",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Titas",
@@ -20498,7 +21045,21 @@
     "TOTAL": "02:42:19.3",
     "_id": 467555,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "53",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Mantas",
@@ -20526,7 +21087,23 @@
     "TOTAL": "02:42:44.3",
     "_id": 467558,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V45",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "5",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Darius",
@@ -20554,7 +21131,21 @@
     "TOTAL": "02:44:03.0",
     "_id": 467565,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "55",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Audrius",
@@ -20582,7 +21173,23 @@
     "TOTAL": "02:46:01.2",
     "_id": 467573,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "58",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Dovilė",
@@ -20610,7 +21217,23 @@
     "TOTAL": "02:54:34.8",
     "_id": 467609,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "M25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113,
+      114
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "4",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Aistė",
@@ -20638,7 +21261,22 @@
     "TOTAL": "02:56:35.5",
     "_id": 467618,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "M25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      114,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "6",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Mantas",
@@ -20666,7 +21304,23 @@
     "TOTAL": "02:57:47.8",
     "_id": 467623,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "63",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Dovilė",
@@ -20694,7 +21348,22 @@
     "TOTAL": "02:57:53.0",
     "_id": 467625,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "M25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      113
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "8",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Lukas",
@@ -20722,7 +21391,19 @@
     "TOTAL": "03:03:33.1",
     "_id": 467646,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Gytis",
@@ -20750,7 +21431,21 @@
     "TOTAL": "03:33:03.8",
     "_id": 467705,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "70",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Martynas",
@@ -20778,7 +21473,22 @@
     "TOTAL": "Withdrawal",
     "_id": 467714,
     "_stage_id": 112,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      110,
+      115
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Arūnas",
@@ -23863,7 +24573,19 @@
     "TOTAL": "02:24:20.8",
     "_id": 564957,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Paulius",
@@ -23891,7 +24613,22 @@
     "TOTAL": "02:27:01.8",
     "_id": 564974,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "32",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Ignas",
@@ -23919,7 +24656,19 @@
     "TOTAL": "02:29:16.7",
     "_id": 564986,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Rasius",
@@ -23947,7 +24696,23 @@
     "TOTAL": "02:31:54.0",
     "_id": 564996,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V55",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123,
+      125,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "1",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Liudvikas",
@@ -23975,7 +24740,21 @@
     "TOTAL": "02:32:13.7",
     "_id": 564998,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V45",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "4",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Gražvydas",
@@ -24003,7 +24782,24 @@
     "TOTAL": "02:32:22.3",
     "_id": 565001,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123,
+      125,
+      127,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "40",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Matas",
@@ -24031,7 +24827,22 @@
     "TOTAL": "02:34:34.3",
     "_id": 565015,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "47",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Ernestas",
@@ -24059,7 +24870,23 @@
     "TOTAL": "02:39:18.1",
     "_id": 565031,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V40",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      125,
+      127,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "18",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Raimondas",
@@ -24087,7 +24914,19 @@
     "TOTAL": "02:39:30.0",
     "_id": 565032,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Mantas",
@@ -24115,7 +24954,21 @@
     "TOTAL": "02:41:02.4",
     "_id": 565040,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V45",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "8",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Mantas",
@@ -24143,7 +24996,24 @@
     "TOTAL": "02:43:49.5",
     "_id": 565055,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V40",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123,
+      125,
+      127,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "22",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Modestas",
@@ -24171,7 +25041,21 @@
     "TOTAL": "02:44:40.0",
     "_id": 565060,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "55",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Gediminas",
@@ -24199,7 +25083,21 @@
     "TOTAL": "02:44:46.2",
     "_id": 565061,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "56",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Arūnė",
@@ -24227,7 +25125,23 @@
     "TOTAL": "02:45:05.6",
     "_id": 565065,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "M25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      125,
+      127,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "2",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Darius",
@@ -24255,7 +25169,23 @@
     "TOTAL": "02:55:32.7",
     "_id": 565102,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V45",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123,
+      127,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "10",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Dovydas",
@@ -24283,7 +25213,24 @@
     "TOTAL": "02:59:59.6",
     "_id": 565122,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123,
+      125,
+      127,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "74",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Ramūnas",
@@ -24311,7 +25258,24 @@
     "TOTAL": "03:07:45.9",
     "_id": 565139,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V50",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123,
+      125,
+      127,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "8",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Vilma",
@@ -24339,7 +25303,22 @@
     "TOTAL": "03:11:46.1",
     "_id": 565145,
     "_stage_id": 124,
-    "_distance": "OD"
+    "_distance": "OD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "M40",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "3",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Arnoldas",
@@ -24393,7 +25372,23 @@
     "TOTAL": "01:13:09.5",
     "_id": 565194,
     "_stage_id": 124,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123,
+      125,
+      127
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "3",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Žydrūnas",
@@ -24421,7 +25416,23 @@
     "TOTAL": "01:17:55.1",
     "_id": 565205,
     "_stage_id": 124,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V45",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123,
+      127,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "3",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Simas",
@@ -24449,7 +25460,19 @@
     "TOTAL": "01:19:01.8",
     "_id": 565208,
     "_stage_id": 124,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": null,
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Austė",
@@ -24477,7 +25500,24 @@
     "TOTAL": "01:25:40.3",
     "_id": 565233,
     "_stage_id": 124,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "M25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123,
+      125,
+      127,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "1",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Gabija",
@@ -24505,7 +25545,23 @@
     "TOTAL": "01:34:11.4",
     "_id": 565275,
     "_stage_id": 124,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "M25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      125,
+      127,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "9",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Zygimantas",
@@ -24533,7 +25589,22 @@
     "TOTAL": "01:37:35.5",
     "_id": 565289,
     "_stage_id": 124,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V40",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "4",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Giedrė",
@@ -24561,7 +25632,21 @@
     "TOTAL": "01:42:43.9",
     "_id": 565305,
     "_stage_id": 124,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "M25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "14",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Paulius",
@@ -24589,7 +25674,23 @@
     "TOTAL": "01:42:45.6",
     "_id": 565306,
     "_stage_id": 124,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123,
+      125,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "38",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Justas",
@@ -24617,7 +25718,22 @@
     "TOTAL": "02:01:13.4",
     "_id": 565348,
     "_stage_id": 124,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      127,
+      128
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "44",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Mantas",
@@ -24645,7 +25761,21 @@
     "TOTAL": "DNF",
     "_id": 565362,
     "_stage_id": 124,
-    "_distance": "SD"
+    "_distance": "SD",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V25",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      123
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": null,
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Donatas",
@@ -28805,9 +29935,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "10",
     "GENDER POS": "10",
-    "GROUP POS": "10",
+    "GROUP POS": "3",
     "BIB": "79",
-    "AGE GROUP": "EM",
+    "AGE GROUP": "V35",
     "GENDER": "V",
     "CITY": "Vilnius",
     "CLUB": "HighPeaks Lietuva",
@@ -28827,7 +29957,19 @@
     "TOTAL": "02:14:00.7",
     "_id": 637792,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EM",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      135,
+      138,
+      140,
+      141
+    ],
+    "GROUP POS ORIGINAL": "10",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Andrius",
@@ -28835,9 +29977,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "28",
     "GENDER POS": "26",
-    "GROUP POS": "26",
+    "GROUP POS": "9",
     "BIB": "102",
-    "AGE GROUP": "EM",
+    "AGE GROUP": "V35",
     "GENDER": "V",
     "CITY": "Kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -28857,7 +29999,17 @@
     "TOTAL": "02:22:09.6",
     "_id": 637810,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EM",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      138,
+      139,
+      141
+    ],
+    "GROUP POS ORIGINAL": "26",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Matas",
@@ -28865,9 +30017,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "42",
     "GENDER POS": "39",
-    "GROUP POS": "39",
+    "GROUP POS": "6",
     "BIB": "64",
-    "AGE GROUP": "EM",
+    "AGE GROUP": "V25",
     "GENDER": "V",
     "CITY": "Kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -28887,7 +30039,19 @@
     "TOTAL": "02:25:33.4",
     "_id": 637824,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EM",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      135,
+      139,
+      140,
+      141
+    ],
+    "GROUP POS ORIGINAL": "39",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Benas",
@@ -28895,9 +30059,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "51",
     "GENDER POS": "48",
-    "GROUP POS": "48",
+    "GROUP POS": "7",
     "BIB": "261",
-    "AGE GROUP": "EM",
+    "AGE GROUP": "V25",
     "GENDER": "V",
     "CITY": "Kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -28917,7 +30081,15 @@
     "TOTAL": "02:27:01.6",
     "_id": 637833,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EM",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      135
+    ],
+    "GROUP POS ORIGINAL": "48",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Ignas",
@@ -28925,9 +30097,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "63",
     "GENDER POS": "60",
-    "GROUP POS": "60",
+    "GROUP POS": null,
     "BIB": "61",
-    "AGE GROUP": "EM",
+    "AGE GROUP": null,
     "GENDER": "V",
     "CITY": "kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -28947,7 +30119,13 @@
     "TOTAL": "02:30:03.8",
     "_id": 637845,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EM",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "unmatched",
+    "_age_group_sources": [],
+    "GROUP POS ORIGINAL": "60",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Simas",
@@ -28955,9 +30133,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "68",
     "GENDER POS": "65",
-    "GROUP POS": "65",
+    "GROUP POS": "17",
     "BIB": "183",
-    "AGE GROUP": "EM",
+    "AGE GROUP": "V35",
     "GENDER": "V",
     "CITY": "Kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -28977,7 +30155,16 @@
     "TOTAL": "02:31:17.0",
     "_id": 637850,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EM",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      141
+    ],
+    "GROUP POS ORIGINAL": "65",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Povilas",
@@ -28985,9 +30172,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "72",
     "GENDER POS": "69",
-    "GROUP POS": "69",
+    "GROUP POS": "14",
     "BIB": "161",
-    "AGE GROUP": "EM",
+    "AGE GROUP": "V30",
     "GENDER": "V",
     "CITY": "Kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -29007,7 +30194,18 @@
     "TOTAL": "02:32:52.9",
     "_id": 637854,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EM",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      138,
+      140,
+      141
+    ],
+    "GROUP POS ORIGINAL": "69",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Paulius",
@@ -29015,9 +30213,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "87",
     "GENDER POS": "84",
-    "GROUP POS": "83",
+    "GROUP POS": "17",
     "BIB": "118",
-    "AGE GROUP": "EM",
+    "AGE GROUP": "V30",
     "GENDER": "V",
     "CITY": "Telšiai",
     "CLUB": "HighPeaks Lietuva",
@@ -29037,7 +30235,18 @@
     "TOTAL": "02:36:40.6",
     "_id": 637869,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EM",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      135,
+      138,
+      141
+    ],
+    "GROUP POS ORIGINAL": "83",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Liudvikas",
@@ -29045,9 +30254,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "112",
     "GENDER POS": "107",
-    "GROUP POS": "106",
+    "GROUP POS": "3",
     "BIB": "276",
-    "AGE GROUP": "EM",
+    "AGE GROUP": "V45",
     "GENDER": "V",
     "CITY": "Kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -29067,7 +30276,18 @@
     "TOTAL": "02:43:43.7",
     "_id": 637894,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EM",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      135,
+      139,
+      141
+    ],
+    "GROUP POS ORIGINAL": "106",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Martynas",
@@ -29075,9 +30295,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "135",
     "GENDER POS": "129",
-    "GROUP POS": "128",
+    "GROUP POS": "23",
     "BIB": "247",
-    "AGE GROUP": "EM",
+    "AGE GROUP": "V35",
     "GENDER": "V",
     "CITY": "Kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -29097,7 +30317,19 @@
     "TOTAL": "02:47:42.6",
     "_id": 637917,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EM",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      135,
+      138,
+      139,
+      141
+    ],
+    "GROUP POS ORIGINAL": "128",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Ramūnas",
@@ -29105,9 +30337,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "160",
     "GENDER POS": "153",
-    "GROUP POS": "152",
+    "GROUP POS": "2",
     "BIB": "103",
-    "AGE GROUP": "EM",
+    "AGE GROUP": "V50",
     "GENDER": "V",
     "CITY": "Kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -29127,7 +30359,19 @@
     "TOTAL": "02:52:09.2",
     "_id": 637942,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EM",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      135,
+      138,
+      140,
+      141
+    ],
+    "GROUP POS ORIGINAL": "152",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Gabija",
@@ -29135,9 +30379,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "165",
     "GENDER POS": "8",
-    "GROUP POS": "7",
+    "GROUP POS": "3",
     "BIB": "625",
-    "AGE GROUP": "EF",
+    "AGE GROUP": "M25",
     "GENDER": "M",
     "CITY": "Kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -29157,7 +30401,19 @@
     "TOTAL": "02:53:17.0",
     "_id": 637947,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EF",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      135,
+      138,
+      140,
+      141
+    ],
+    "GROUP POS ORIGINAL": "7",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Tomas",
@@ -29165,9 +30421,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "181",
     "GENDER POS": "172",
-    "GROUP POS": "171",
+    "GROUP POS": "33",
     "BIB": "182",
-    "AGE GROUP": "EM",
+    "AGE GROUP": "V30",
     "GENDER": "V",
     "CITY": "Kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -29187,7 +30443,15 @@
     "TOTAL": "02:55:32.6",
     "_id": 637963,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EM",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134
+    ],
+    "GROUP POS ORIGINAL": "171",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Darius",
@@ -29195,9 +30459,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "184",
     "GENDER POS": "175",
-    "GROUP POS": "174",
+    "GROUP POS": "5",
     "BIB": "104",
-    "AGE GROUP": "EM",
+    "AGE GROUP": "V50",
     "GENDER": "V",
     "CITY": "Kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -29217,7 +30481,20 @@
     "TOTAL": "02:55:49.0",
     "_id": 637966,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EM",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      135,
+      138,
+      139,
+      140,
+      141
+    ],
+    "GROUP POS ORIGINAL": "174",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Mantas",
@@ -29225,9 +30502,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "195",
     "GENDER POS": "183",
-    "GROUP POS": "182",
+    "GROUP POS": "8",
     "BIB": "40",
-    "AGE GROUP": "EM",
+    "AGE GROUP": "V45",
     "GENDER": "V",
     "CITY": "Kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -29247,7 +30524,18 @@
     "TOTAL": "02:58:19.8",
     "_id": 637977,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EM",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      135,
+      138,
+      141
+    ],
+    "GROUP POS ORIGINAL": "182",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Vilma",
@@ -29255,9 +30543,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "240",
     "GENDER POS": "21",
-    "GROUP POS": "20",
+    "GROUP POS": "4",
     "BIB": "642",
-    "AGE GROUP": "EF",
+    "AGE GROUP": "M40",
     "GENDER": "M",
     "CITY": "Kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -29277,7 +30565,16 @@
     "TOTAL": "03:10:38.4",
     "_id": 638022,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EF",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      141
+    ],
+    "GROUP POS ORIGINAL": "20",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Giedrė",
@@ -29285,9 +30582,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "287",
     "GENDER POS": "30",
-    "GROUP POS": "29",
+    "GROUP POS": "6",
     "BIB": "608",
-    "AGE GROUP": "EF",
+    "AGE GROUP": "M30",
     "GENDER": "M",
     "CITY": "Kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -29307,7 +30604,16 @@
     "TOTAL": "03:44:08.8",
     "_id": 638069,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EF",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      135
+    ],
+    "GROUP POS ORIGINAL": "29",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Eimantas",
@@ -29315,9 +30621,9 @@
     "BIRTH DATE": "2000-12-12",
     "POS": "DNF",
     "GENDER POS": "-",
-    "GROUP POS": "-",
+    "GROUP POS": null,
     "BIB": "189",
-    "AGE GROUP": "EM",
+    "AGE GROUP": "V30",
     "GENDER": "V",
     "CITY": "Kaunas",
     "CLUB": "HighPeaks Lietuva",
@@ -29337,7 +30643,19 @@
     "TOTAL": "DNF",
     "_id": 638078,
     "_stage_id": 136,
-    "_distance": "od"
+    "_distance": "od",
+    "AGE GROUP ORIGINAL": "EM",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      135,
+      138,
+      140,
+      141
+    ],
+    "GROUP POS ORIGINAL": "-",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Timas",
@@ -29395,7 +30713,23 @@
     "TOTAL": "01:11:36.9",
     "_id": 638091,
     "_stage_id": 136,
-    "_distance": "sd"
+    "_distance": "sd",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V30",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      138,
+      140,
+      141
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "1",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Martynas",
@@ -29423,7 +30757,26 @@
     "TOTAL": "01:13:31.3",
     "_id": 638092,
     "_stage_id": 136,
-    "_distance": "sd"
+    "_distance": "sd",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "V30",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      135,
+      138,
+      139,
+      140,
+      141
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "2",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Ingrida",
@@ -29451,7 +30804,21 @@
     "TOTAL": "01:29:32.9",
     "_id": 638139,
     "_stage_id": 136,
-    "_distance": "sd"
+    "_distance": "sd",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "M35",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      141
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "2",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Agnė",
@@ -29479,7 +30846,25 @@
     "TOTAL": "01:31:03.7",
     "_id": 638150,
     "_stage_id": 136,
-    "_distance": "sd"
+    "_distance": "sd",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "M40",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      138,
+      139,
+      140,
+      141
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "2",
+    "_group_pos_estimated": true
   },
   {
     "FIRST NAME": "Dalia",
@@ -29507,7 +30892,25 @@
     "TOTAL": "01:31:34.1",
     "_id": 638155,
     "_stage_id": 136,
-    "_distance": "sd"
+    "_distance": "sd",
+    "AGE GROUP ORIGINAL": null,
+    "_age_group_absent_columns": [
+      "AGE GROUP",
+      "GROUP POS"
+    ],
+    "AGE GROUP": "M30",
+    "_age_group_inferred": true,
+    "_age_group_confidence": "high",
+    "_age_group_sources": [
+      134,
+      135,
+      139,
+      140,
+      141
+    ],
+    "GROUP POS ORIGINAL": null,
+    "GROUP POS": "4",
+    "_group_pos_estimated": true
   },
   {
     "POS": "4",

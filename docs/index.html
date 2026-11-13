@@ -117,6 +117,10 @@
     font-family:'JetBrains Mono',monospace;font-weight:600;
   }
   .pos.podium{color:var(--accent-warm);}
+  /* Age group / AG pos inferred by the scraper (organiser published none) */
+  .inferred{cursor:help;border-bottom:1px dotted var(--text-dim);}
+  .est-note{cursor:help;border-bottom:1px dotted var(--text-dim);}
+  .inferred::after{content:'~';margin-left:2px;color:var(--text-dim);font-weight:400;}
   .badge{
     font-family:'JetBrains Mono',monospace;font-size:10px;padding:2px 7px;border-radius:100px;
     border:1px solid var(--line);color:var(--text-dim);white-space:nowrap;
@@ -416,6 +420,29 @@ function stageLabel(stageId) {
   return stageNames[stageId] || `Stage ${stageId}`;
 }
 
+function escapeAttr(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+}
+
+// Age group filled in by scraper/age_groups.py from the athlete's other LTT stages that year.
+function ageGroupCell(r) {
+  const ag = r['AGE GROUP'] || '—';
+  if (!r._age_group_inferred || !r['AGE GROUP']) return ag;
+  const sources = (r._age_group_sources || []).map(stageLabel).join('; ');
+  const orig = r['AGE GROUP ORIGINAL'] || 'none';
+  const tip = `Inferred (${r._age_group_confidence} confidence) from: ${sources}. Organiser listed: ${orig}.`;
+  return `<span class="inferred" title="${escapeAttr(tip)}">${ag}</span>`;
+}
+
+function agPosCell(r) {
+  const v = r['GROUP POS'];
+  const cls = `pos ${isTop3(v) ? 'podium' : ''}`;
+  if (!r._group_pos_estimated || !v || v === '*') return `<span class="${cls}">${v || '—'}</span>`;
+  const tip = 'Estimated: the organiser published no age groups for this race. ' +
+              'Ranked among athletes whose age group could be inferred, so the real place may be lower.';
+  return `<span class="${cls} inferred" title="${escapeAttr(tip)}">${v}</span>`;
+}
+
 function isTop3(v) {
   return ['1', '2', '3'].includes(String(v));
 }
@@ -695,12 +722,13 @@ function renderStats(rows) {
   const athleteCount = new Set(rows.map(r => `${r['FIRST NAME']}|${r['LAST NAME']}`)).size;
   const podiums = rows.filter(isPodiumRow).length;
   const agPodiums = rows.filter(isAgPodiumRow).length;
+  const agPodiumsEst = rows.filter(r => isAgPodiumRow(r) && r._group_pos_estimated).length;
   const clubPoints = rows.reduce((sum, r) => sum + (parseInt(r['CLUB POINTS'], 10) || 0), 0);
   stats.innerHTML = `
     <div class="stat"><div class="n">${athleteCount}</div><div class="l">Athletes</div></div>
     <div class="stat"><div class="n">${clubPoints}</div><div class="l">Club points earned this stage</div></div>
     <div class="stat"><div class="n">${podiums}</div><div class="l">Podium finishes</div></div>
-    <div class="stat"><div class="n">${agPodiums}</div><div class="l">Age group podium finishes</div></div>
+    <div class="stat"><div class="n">${agPodiums}</div><div class="l">Age group podium finishes${agPodiumsEst ? ` <span class="est-note" title="Includes ${agPodiumsEst} estimated age-group places from races where the organiser published no age groups">(${agPodiumsEst} est.)</span>` : ''}</div></div>
   `;
 }
 
@@ -773,12 +801,12 @@ function renderTable(rows) {
         <tr>
           <td data-label="Pos"><span class="pos ${['1','2','3'].includes(String(r['POS']))?'podium':''}">${r['POS']||'—'}</span></td>
           <td data-label="Gender pos"><span class="pos ${['1','2','3'].includes(String(r['GENDER POS']))?'podium':''}">${r['GENDER POS']||'—'}</span></td>
-          <td data-label="AG pos"><span class="pos ${['1','2','3'].includes(String(r['GROUP POS']))?'podium':''}">${r['GROUP POS']||'—'}</span></td>
+          <td data-label="AG pos">${agPosCell(r)}</td>
           <td data-label="Athlete"><span class="name">${(r['FIRST NAME'] || r['LAST NAME']) ? `${r['FIRST NAME']||''} ${r['LAST NAME']||''}` : (r['MEMBERS'] || '—')}</span></td>
           <td data-label="Distance"><span class="badge">${(r._distance || '—').toUpperCase()}</span></td>
           <td data-label="Total" class="mono">${r['TOTAL']||'—'}</td>
           <td data-label="Split">${segBar(r)}</td>
-          <td data-label="Age group">${r['AGE GROUP']||'—'}</td>
+          <td data-label="Age group">${ageGroupCell(r)}</td>
           <td data-label="Club points" class="mono">${r['CLUB POINTS']||'—'}</td>
         </tr>
       `).join('')}

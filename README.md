@@ -24,8 +24,15 @@ scraper/scrape.py   →  1. walks season IDs, calling the stage-list API to disc
                        4. calls the all-stages endpoint to find each season's
                           "Klubų įskaita" (club standings) aggregate stage, then
                           fetches its club leaderboard (top 10, with per-stage points)
+                       5. age-group enrichment (scraper/age_groups.py): for LTT
+                          stages whose AGE GROUP is missing or generic (e.g.
+                          Trakai's "EM"/"EF"), infers each athlete's group from
+                          the other LTT stages of the same year (name match),
+                          keeps the original in "AGE GROUP ORIGINAL", and writes
+                          a report of every adjustment
                        │
                        ├─ data/all_results_raw.json   (every athlete, every club — full archive)
+                       ├─ data/scrape_report.md/.json (scrape summary + every age-group adjustment)
                        ├─ docs/data.json              (just HighPeaks Lietuva results)
                        ├─ docs/stage_names.json       (stage id -> real name/date label)
                        ├─ docs/upcoming.json          (per upcoming stage: HighPeaks
@@ -98,6 +105,38 @@ Useful flags:
 - `--club "Other Club Name"` — track a different club instead
 - `--max-seasons 15` — how far back to look; the scraper stops early once it
   hits a few empty seasons in a row, so a generous number here is harmless
+
+## Age-group enrichment (LTT stages)
+
+Some LTT stages publish no usable age groups. Trakai is open/elite only: `EM`/`EF` on the
+Olympic distance and no `AGE GROUP` column on the sprint. Birth dates are a placeholder
+(`2000-12-12`), so the group can't be computed from them. After each scrape,
+`scraper/age_groups.py` fills those rows from **the other LTT stages of the same year
+only**, matching athletes by first + last name with diacritics stripped:
+
+- Only distances that have real age groups (`V30`, `M45`, ... and the 2022 `M`/`W`
+  scheme) at some LTT stage that year are touched. TRI-FUN, kids, relays and youth
+  super sprint are left alone.
+- A gender guard checks each candidate group's letter against the athlete's `GENDER`,
+  using that year's letter scheme.
+- Confidence levels:
+  - one consistent group → `high`
+  - a strict majority, or a tie broken by the same club → `medium`
+  - a tie that can't be broken → `conflict`, left empty
+  - no other appearance → `unmatched`, left empty
+- Originals are kept in `AGE GROUP ORIGINAL` / `GROUP POS ORIGINAL`. Enriched rows carry
+  `_age_group_inferred`, `_age_group_confidence` and `_age_group_sources` (stage ids).
+- Where the organiser published no age groups for a whole distance, `GROUP POS` is
+  recomputed with the organiser's own rule: gender top 3 get `*`, and everyone else is
+  ranked by `POS` within their group. These rows are flagged `_group_pos_estimated`.
+  The places are estimates, because unmatched athletes are missing from the ranking.
+- Every adjustment is listed in `data/scrape_report.md`, and in machine-readable form in
+  `scrape_report.json`.
+
+Re-run only the enrichment on the existing archive (no network) with
+`python scraper/scrape.py --enrich-only`. It is idempotent. Run the tests with
+`pip install pytest && python -m pytest scraper/`. They include a back-test that hides
+the age groups of a real stage and checks the inferred ones.
 
 ## Putting it on GitHub + free hosting
 
