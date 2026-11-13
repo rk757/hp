@@ -53,6 +53,7 @@ from pathlib import Path
 import requests
 
 from age_groups import enrich_age_groups, render_report_markdown, report_totals
+from field_stats import attach_field_stats
 
 # Project root = one level up from this script (scraper/scrape.py -> project root)
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
@@ -326,8 +327,10 @@ def write_json(path, data):
 
 
 def filter_club(records, club_name):
+    """Club rows only, each with "_field" medians from its race (see field_stats.py)."""
     club_name_lower = club_name.strip().lower()
-    return [r for r in records if (r.get("CLUB") or "").strip().lower() == club_name_lower]
+    club_rows = [r for r in records if (r.get("CLUB") or "").strip().lower() == club_name_lower]
+    return attach_field_stats(club_rows, records)
 
 
 def run_enrichment(records, stage_meta, club_name, out_report_md, out_report_json, scrape_summary):

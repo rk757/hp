@@ -138,6 +138,24 @@ Re-run only the enrichment on the existing archive (no network) with
 `pip install pytest && python -m pytest scraper/`. They include a back-test that hides
 the age groups of a real stage and checks the inferred ones.
 
+## Athlete season statistics
+
+The **Athletes** tab lists every club athlete in the selected season. Clicking a card, or
+any athlete name in the results table or leaderboards, opens a personal statistics page at
+`#athlete/<name>`. These links can be shared and the browser back button works.
+
+- Races are compared only like-for-like: same race type (triathlon, Splash & Run, aquathlon)
+  and same distance (OD with OD, SD with SD, super sprint, TRI-FUN, 70.3...). Relays are
+  excluded.
+- For triathlon the view can be narrowed to **Total / Swim / Bike / Run / Transitions**, or
+  set to **Compare disciplines**, which plots each leg as % change from the first race.
+  Splash & Run and aquathlon only publish a total time.
+- Each discipline gets a trend card: a linear fit over the races, labelled *Improving*,
+  *Slower* or *Stable* (within ±1%). The chart's y-axis is reversed, so faster plots higher.
+- **vs field median** compares each split with the median of same-gender finishers in that
+  race, which removes course differences between venues. The medians are computed by
+  `scraper/field_stats.py` from the full archive and stored on each club row as `_field`.
+
 ## Putting it on GitHub + free hosting
 
 1. Create a new GitHub repo and push this folder to it.

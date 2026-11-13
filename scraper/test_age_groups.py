@@ -186,3 +186,22 @@ def test_backtest_hidden_stage_accuracy():
     print("backtest stage 138:", dict(outcome))
     assert inferred / len(truth) > 0.5
     assert outcome["ok"] / inferred > 0.97
+
+
+# --- field_stats ---
+
+def test_field_stats_medians_per_stage_distance_gender():
+    from field_stats import attach_field_stats, time_to_seconds
+    assert time_to_seconds("02:14:00.7") == pytest.approx(8040.7)
+    assert time_to_seconds("0:43:04") == 2584 and time_to_seconds("DNF") is None
+    field = [{"FIRST NAME": f"a{i}", "GENDER": "V", "POS": str(i + 1), "_stage_id": 1, "_distance": "od",
+              "TOTAL": f"02:0{i}:00", "SWIM": "00:30:00", "BIKE": "01:00:00", "RUN": "00:40:00",
+              "T1": "00:01:00", "T2": "00:01:00", "CLUB": "X"} for i in range(5)]
+    dnf = dict(field[0], POS="DNF", TOTAL="00:01:00", **{"FIRST NAME": "dnf"})
+    women = dict(field[0], GENDER="M", **{"FIRST NAME": "w"})
+    club = dict(field[2], CLUB="HighPeaks Lietuva")
+    out = attach_field_stats([club, women], field + [dnf, women])
+    assert out[0]["_field"] == {"n": 5, "total": 7320.0, "swim": 1800.0, "bike": 3600.0,
+                                "run": 2400.0, "trans": 120.0}
+    assert "_field" not in out[1]  # only 1 woman finisher < MIN_FIELD
+    assert "_field" not in club  # input rows not mutated
