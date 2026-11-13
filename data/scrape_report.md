@@ -1,8 +1,8 @@
 # Scrape report
 
-- **completed stages**: 115
-- **upcoming stages**: 8
-- **result rows**: 19586
+- **completed stages**: 121
+- **upcoming stages**: 12
+- **result rows**: 20106
 
 ## Age-group enrichment (LTT stages, same-year lookup)
 

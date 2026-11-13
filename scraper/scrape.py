@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Scraper for CARE-platform triathlon results (triatlonotaure.lt, irontrakai.lt).
+Scraper for CARE-platform triathlon results (triatlonotaure.lt, irontrakai.lt, tskdarna.lt).
 
-Both sites run on the same CARE platform with identical JSON API endpoints
+All sites run on the same CARE platform with identical JSON API endpoints
 and response format ({result: [{id, row, titles, stageId, distance}], page,
 total, total_pages}).
 
@@ -46,8 +46,9 @@ Four API endpoint patterns are used per site (all discovered via browser devtool
    one column per real stage that season (points earned there, 0 if the stage
    hasn't happened yet), Taškai (season total), Dalyvių skaičius (participants).
 
-Iron Trakai stage IDs are offset by +10000 to avoid collision with
-triatlonotaure.lt stage IDs that share the same numeric range.
+Iron Trakai stage IDs are offset by +10000 and TSK Darna by +20000 to
+avoid collision with triatlonotaure.lt stage IDs that share the same
+numeric range. Duathlon stages are skipped (not triathlon).
 """
 
 import argparse
@@ -75,6 +76,13 @@ IRON_DISTANCE_CANONICAL = {
     "EST": "70-3est",
 }
 
+DARNA_DISTANCE_CANONICAL = {
+    "I dist": "1",       # 2025 pool triathlon I -> 2026 canonical
+    "II dist": "2",      # 2025 pool triathlon II -> 2026 canonical
+    "III dist": "3",     # 2025 pool triathlon III -> 2026 canonical
+    "IV dist": "4",      # 2025 pool triathlon IV -> 2026 canonical
+}
+
 SITES = [
     {
         "key": "ltt",
@@ -91,6 +99,14 @@ SITES = [
         "stage_id_offset": 10_000,
         "has_club_standings": False,
         "distance_map": IRON_DISTANCE_CANONICAL,
+    },
+    {
+        "key": "darna",
+        "label": "tskdarna.lt",
+        "base_url": "https://www.tskdarna.lt",
+        "stage_id_offset": 20_000,
+        "has_club_standings": False,
+        "distance_map": DARNA_DISTANCE_CANONICAL,
     },
 ]
 
@@ -451,6 +467,9 @@ def scrape(club_name, out_raw_path, out_filtered_path, out_stage_names_path,
 
         # --- Completed races: pull results per distance ---
         for stage_id, info in sorted(completed.items()):
+            if "duatlon" in (info.get("name") or "").lower():
+                print(f"  Skipping stage {stage_id} ({stage_label(info)}) (duathlon)")
+                continue
             distance_codes = (
                 [d["code"] for d in info.get("distances", []) if d.get("code")]
                 or FALLBACK_DISTANCES
