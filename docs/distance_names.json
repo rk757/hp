@@ -233,5 +233,17 @@
   "OD/EST": "OD ESTAFETĖ",
   "TRI-FUN/EST": "TRI-FUN ESTAFETĖ",
   "SD/70.30/EST": "SD + VIDUTINIS ESTAFETĖ",
-  "OD/70.30/EST": "OD + VIDUTINIS ESTAFETĖ"
+  "OD/70.30/EST": "OD + VIDUTINIS ESTAFETĖ",
+  "70-3": "Iron Trakai 70.3",
+  "70-3est": "Iron Trakai 70.3 estafetė (relay)",
+  "140-6est": "Iron Trakai 140.6 estafetė (relay)",
+  "140-6": "Iron Trakai 140.6",
+  "OTHERS": "CUSTOM NUMBER OF LAPS",
+  "AkvaKids": "Vaikų akvatlonas",
+  "5KM": "5 KM BĖGIMAS",
+  "500-m-vaik-iki-10m-b-gimas": "500 m vaikų iki 10m bėgimas",
+  "7km": "7 km bėgimas ",
+  "21km": "21 km bėgimas",
+  "1-9km": "1,9 km plaukimas",
+  "3-8km": "3,8 km plaukimas"
 }

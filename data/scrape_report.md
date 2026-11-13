@@ -1,11 +1,12 @@
 # Scrape report
 
-- **mode**: enrich-only (no scraping)
-- **result rows**: 31844
+- **completed stages**: 115
+- **upcoming stages**: 8
+- **result rows**: 19586
 
 ## Age-group enrichment (LTT stages, same-year lookup)
 
-Rows with missing/generic age group: **1614** — high: 769, medium: 3, conflict: 1, unmatched: 841
+Rows with missing/generic age group: **1969** — high: 914, medium: 3, conflict: 1, unmatched: 1051
 
 Original values are kept in `AGE GROUP ORIGINAL` / `GROUP POS ORIGINAL`. `GROUP POS` is recomputed (estimate) only where the organiser published no age groups for the whole distance.
 
@@ -1499,150 +1500,403 @@ Original values are kept in `AGE GROUP ORIGINAL` / `GROUP POS ORIGINAL`. `GROUP 
 
 | Stage | Distance | Targeted / total | high | medium | conflict | unmatched | GROUP POS recomputed |
 |---|---|---|---|---|---|---|---|
-| KAIŠIADORIŲ TRIATLONAS - LTT 1 (2023-06-11) | sd | 1 / 100 | 0 | 0 | 0 | 1 | no |
-| SKAYLINK TRAKŲ TRIATLONAS LTT 2 (2023-07-02) | od | 203 / 203 | 57 | 0 | 0 | 146 | yes |
+| KAIŠIADORIŲ TRIATLONAS - LTT 1 (2023-06-11) | sd | 1 / 100 | 1 | 0 | 0 | 0 | no |
+| KAIŠIADORIŲ TRIATLONAS - LTT 1 (2023-06-11) | trifun | 39 / 39 | 6 | 0 | 0 | 33 | yes |
+| JONAVOS TRIATLONAS - LTT 3 (2023-07-22) | trifun | 49 / 49 | 3 | 0 | 0 | 46 | yes |
+| VEISIEJŲ TRIATLONAS - LTT 4 (2023-08-19) | trifun | 39 / 39 | 5 | 0 | 0 | 34 | yes |
+| DRUSKININKŲ TRIATLONAS - LTT 5 (2023-09-02) | sd | 1 / 110 | 0 | 0 | 0 | 1 | no |
+| DRUSKININKŲ TRIATLONAS - LTT 5 (2023-09-02) | trifun | 78 / 79 | 0 | 0 | 0 | 78 | no |
+| SKAYLINK TRAKŲ TRIATLONAS LTT 2 (2023-07-02) | od | 203 / 203 | 107 | 0 | 0 | 96 | yes |
+| SKAYLINK TRAKŲ TRIATLONAS LTT 2 (2023-07-02) | sd | 149 / 149 | 80 | 0 | 0 | 69 | yes |
 
 #### KAIŠIADORIŲ TRIATLONAS - LTT 1 (2023-06-11) — sd
 
 | Pos | Name | Club | Original | Inferred | Confidence | Candidates | GROUP POS (orig → new) |
 |---|---|---|---|---|---|---|---|
-| 63 | Sigita DANILEVICIENE | - | - | — | unmatched | — | unchanged |
+| 63 | Sigita DANILEVICIENE | - | - | M25 | high | M25×2 | unchanged |
+
+#### KAIŠIADORIŲ TRIATLONAS - LTT 1 (2023-06-11) — trifun
+
+| Pos | Name | Club | Original | Inferred | Confidence | Candidates | GROUP POS (orig → new) |
+|---|---|---|---|---|---|---|---|
+| 1 | Povilas  STRAZDAS | BTT | TRI-FUN-18V | V25 | high | V25×1 | * → * |
+| 2 | Erikas AUKŠTIKALNIS | **HighPeaks Lietuva** | TRI-FUN-18V | V25 | high | V25×3 | * → * |
+| 6 | Kazimieras UŽPALEVIČIUS | Born2Move LTU | TRI-FUN-40V | V40 | high | V40×1 | 3 → 1 |
+| 24 | Dovilė RIMUTĖ | **Highpeaks Lietuva** | TRI-FUN-18M | M25 | high | M25×3 | 1 → 1 |
+| 28 | Tomas BALTRAMONAITIS | **HighPeaks Lietuva** | TRI-FUN-18V | V25 | high | V25×1 | 7 → 1 |
+| 37 | Arnoldas STANAITIS |  | TRI-FUN-18V | V25 | high | V25×1 | 8 → 2 |
+| 3 | Deividas KAZLAUSKAS | Kauno plaukimo mokykla | TRI-FUN-13V | — | unmatched | — | * → * |
+| 4 | Povilas CIURLEVICIUS | Born2Move LTU | TRI-FUN-40V | — | unmatched | — | 1 → None |
+| 5 | Egidijus JUZONIS | Na, pagauk! | TRI-FUN-40V | — | unmatched | — | 2 → None |
+| 7 | Kajus RUDOKAS | Kauno plaukimo mokykla | TRI-FUN-16V | — | unmatched | — | 1 → None |
+| 8 | Irmantas KUBILIUS |  | TRI-FUN-40V | — | unmatched | — | 4 → None |
+| 9 | Kristupas JANČIUS | BTT | TRI-FUN-13V | — | unmatched | — | 1 → None |
+| 10 | Haroldas KUTKA | TRItonas | TRI-FUN-40V | — | unmatched | — | 5 → None |
+| 11 | Edvardas LUCEVICIUS | BTT | TRI-FUN-40V | — | unmatched | — | 6 → None |
+| 12 | Marius DOBILAS |  | TRI-FUN-18V | — | unmatched | — | 1 → None |
+| 13 | Rapolas DANILEVICIUS |  | TRI-FUN-40V | — | unmatched | — | 7 → None |
+| 14 | Ginas GINCAS | BTT | TRI-FUN-18V | — | unmatched | — | 2 → None |
+| 15 | Dovydas RANDIS |  | TRI-FUN-18V | — | unmatched | — | 3 → None |
+| 16 | Emilis GYLYS | TRItonas | TRI-FUN-16V | — | unmatched | — | 2 → None |
+| 17 | Dainius LUČKAUSKAS | Swedbank | TRI-FUN-18V | — | unmatched | — | 4 → None |
+| 18 | Matas ČIUŽAS |  | TRI-FUN-13V | — | unmatched | — | 2 → None |
+| 19 | Modestas KUTKA | TRItonas | TRI-FUN-13V | — | unmatched | — | 3 → None |
+| 20 | Edita VAREIKĖ | Trakų Triatlono Būrelis | TRI-FUN-18M | — | unmatched | — | * → * |
+| 21 | Gustė KUBILIŪTĖ | TRItonas | TRI-FUN-16M | — | unmatched | — | * → * |
+| 22 | Marija PETKUTĖ | Kauno plaukimo mokykla | TRI-FUN-16M | — | unmatched | — | * → * |
+| 23 | Jonas MEILUTIS | **Highpeaks Lietuva** | TRI-FUN-16V | — | unmatched | — | 3 → None |
+| 25 | Pijus LAZAUSKAS |  | TRI-FUN-18V | — | unmatched | — | 5 → None |
+| 26 | Mindaugas LUKOŠEVIČIUS |  | TRI-FUN-40V | — | unmatched | — | 8 → None |
+| 27 | Haroldas ŠIUIKA |  | TRI-FUN-18V | — | unmatched | — | 6 → None |
+| 29 | Andrius ŠUMSKIS |  | TRI-FUN-40V | — | unmatched | — | 9 → None |
+| 30 | Saulius STANKEVIČIUS | Javonis | TRI-FUN-40V | — | unmatched | — | 10 → None |
+| 31 | Julija KARUŽAITĖ |  | TRI-FUN-18M | — | unmatched | — | 2 → None |
+| 32 | Neringa KRIŠČIŪNIENĖ | Marijampolės triatlono draugija | TRI-FUN-18M | — | unmatched | — | 3 → None |
+| 33 | Simonas ČIUŽAS |  | TRI-FUN-13V | — | unmatched | — | 4 → None |
+| 34 | Andrius LAPINSKAS |  | TRI-FUN-40V | — | unmatched | — | 11 → None |
+| 35 | Ruslanas AGEJEVAS |  | TRI-FUN-40V | — | unmatched | — | 12 → None |
+| 36 | Simona SAVICKAITĖ |  | TRI-FUN-18M | — | unmatched | — | 4 → None |
+| 38 | Rūta SUDAKOVIENĖ | IKIGAI team | TRI-FUN-18M | — | unmatched | — | 5 → None |
+| 39 | Arnoldas VALAIŠA |  | TRI-FUN-18V | — | unmatched | — | 9 → None |
+
+#### JONAVOS TRIATLONAS - LTT 3 (2023-07-22) — trifun
+
+| Pos | Name | Club | Original | Inferred | Confidence | Candidates | GROUP POS (orig → new) |
+|---|---|---|---|---|---|---|---|
+| 38 | Julita KAZLAUSKAITĖ |  | TRI-FUN-18M | M25 | high | M25×1 | 7 → 1 |
+| 40 | Arnoldas STANAITIS |  | TRI-FUN-18V | V25 | high | V25×1 | 13 → 1 |
+| 47 | Hartmut MITTELSTADT | HC Dzūkija Alytus | TRI-FUN-40V | V60 | high | V60×3 | 6 → 1 |
+| 1 | Jonas Saulius JONAITIS | SSC BTT | TRI-FUN-16V | — | unmatched | — | * → * |
+| 2 | Deividas KAZLAUSKAS | Kauno plaukimo mokykla | TRI-FUN-13V | — | unmatched | — | * → * |
+| 3 | Egidijus JUZONIS | Na, pagauk! | TRI-FUN-40V | — | unmatched | — | * → * |
+| 4 | Kajus RUDOKAS | Kauno plaukimo mokykla | TRI-FUN-16V | — | unmatched | — | 1 → None |
+| 5 | Kristupas KENSTAVIČIUS | SSC BTT | TRI-FUN-13V | — | unmatched | — | 1 → None |
+| 6 | Simonas MARKŪNAS | BTT | TRI-FUN-13V | — | unmatched | — | 2 → None |
+| 7 | Jan MOĖDINGER |  | TRI-FUN-18V | — | unmatched | — | 1 → None |
+| 8 | Povilas (TRIFUN) SIMANAITIS | KAYAK | TRI-FUN-18V | — | unmatched | — | 2 → None |
+| 9 | Nadezhda NAKVOSE | OSK Sakas | TRI-FUN-18M | — | unmatched | — | * → * |
+| 10 | Vaidas SIUPINSKAS | PAPANE | TRI-FUN-18V | — | unmatched | — | 3 → None |
+| 11 | Rapolas DANILEVICIUS |  | TRI-FUN-40V | — | unmatched | — | 1 → None |
+| 12 | Marius DOBILAS |  | TRI-FUN-18V | — | unmatched | — | 4 → None |
+| 13 | Haroldas  KUTKA | TRItonas | TRI-FUN-40V | — | unmatched | — | 2 → None |
+| 14 | Edita VAREIKĖ | Trakų Triatlono Būrelis | TRI-FUN-18M | — | unmatched | — | * → * |
+| 15 | Emilija VASILJEVAITĖ | Aukštaitijos plaukimo - triatlono akademija | TRI-FUN-13M | — | unmatched | — | * → * |
+| 16 | Saulė RIMKEVIČIŪTĖ | SSC BTT | TRI-FUN-13M | — | unmatched | — | 1 → None |
+| 17 | Milda AŽUSIENYTĖ | Panevėžio triatlono klubas TRI-Fun/PSC | TRI-FUN-16M | — | unmatched | — | 1 → None |
+| 18 | Darija RAŠTUTYTĖ | Panevėžio triatlono klubas TRI-Fun/PSC | TRI-FUN-16M | — | unmatched | — | 2 → None |
+| 19 | Julius DOMBRAUSKIS | Stido | TRI-FUN-18V | — | unmatched | — | 5 → None |
+| 20 | Kamilė VAIDŽIULYTĖ | Team Ignite | TRI-FUN-18M | — | unmatched | — | 1 → None |
+| 21 | Emilis  SEIKAUSKAS | Panevėžio triatlono klubas - PSC sporto klubas  | TRI-FUN-13V | — | unmatched | — | 3 → None |
+| 22 | Danielius GOKAS |  | TRI-FUN-18V | — | unmatched | — | 6 → None |
+| 23 | Marija PETKUTĖ | Kauno plaukimo mokykla | TRI-FUN-16M | — | unmatched | — | 3 → None |
+| 24 | Justas PIRINAUSKAS | - | TRI-FUN-18V | — | unmatched | — | 7 → None |
+| 25 | Rima KONTENYTĖ | BTT | TRI-FUN-18M | — | unmatched | — | 2 → None |
+| 26 | Emilis  NIKANOROVAS | Panevėžio triatlono klubas - PSC sporto klubas  | TRI-FUN-13V | — | unmatched | — | 4 → None |
+| 27 | Tadas VIRBALAS |  | TRI-FUN-18V | — | unmatched | — | 8 → None |
+| 28 | Viktorija DANIELĖ |  | TRI-FUN-18M | — | unmatched | — | 3 → None |
+| 29 | Paulius VIRBALAS |  | TRI-FUN-18V | — | unmatched | — | 9 → None |
+| 30 | Tomas SAVICKAS |  | TRI-FUN-18V | — | unmatched | — | 10 → None |
+| 31 | Kipras KUŠLEIKA |  | TRI-FUN-18V | — | unmatched | — | 11 → None |
+| 32 | Donatas ALKSNYS | - | TRI-FUN-18V | — | unmatched | — | 12 → None |
+| 33 | Paulina  MALCIENE | KAYAK | TRI-FUN-18M | — | unmatched | — | 4 → None |
+| 34 | Simona SAVICKAITĖ |  | TRI-FUN-18M | — | unmatched | — | 5 → None |
+| 35 | Modestas KUTKA | TRItonas | TRI-FUN-13V | — | unmatched | — | 5 → None |
+| 36 | Ieva ŽURUMSKAITĖ | TriFamClub | TRI-FUN-18M | — | unmatched | — | 6 → None |
+| 37 | Saulius STANKEVIČIUS | OK Javonis | TRI-FUN-40V | — | unmatched | — | 3 → None |
+| 39 | Kamilė JUODEIKĖ | Kauno plaukimo mokykla | TRI-FUN-13M | — | unmatched | — | 2 → None |
+| 41 | Rūta SUDAKOVIENĖ | IKIGAI team | TRI-FUN-18M | — | unmatched | — | 8 → None |
+| 42 | Justina MEDŽIŪNĖ | - | TRI-FUN-18M | — | unmatched | — | 9 → None |
+| 43 | Ramunas KELIUOTIS |  | TRI-FUN-40V | — | unmatched | — | 4 → None |
+| 44 | Mantas RIMIDIS | KAYAK | TRI-FUN-18V | — | unmatched | — | 14 → None |
+| 45 | Laurynas KAROSAS |  | TRI-FUN-18V | — | unmatched | — | 15 → None |
+| 46 | Valdas DANIELIUS |  | TRI-FUN-40V | — | unmatched | — | 5 → None |
+| 48 | Giedrius VENSLOVA |  | TRI-FUN-18V | — | unmatched | — | 16 → None |
+| - | Justinas URBA | Kauno plaukimo mokykla | TRI-FUN-16V | — | unmatched | — | 1 → None |
+
+#### VEISIEJŲ TRIATLONAS - LTT 4 (2023-08-19) — trifun
+
+| Pos | Name | Club | Original | Inferred | Confidence | Candidates | GROUP POS (orig → new) |
+|---|---|---|---|---|---|---|---|
+| 9 | Kazimieras UŽPALEVIČIUS | Born2Move LTU | TRI-FUN-40V | V40 | high | V40×1 | 2 → 1 |
+| 13 | Aušrinė GIRČYTĖ | Klaipėdos Triatlono Klubas | TRI-FUN-18M | M20 | high | M20×1 | * → * |
+| 14 | Rimas JANKUNAS | STI | TRI-FUN-40V | V55 | high | V55×1 | 5 → 1 |
+| 16 | Edita GRIGAITIENĖ | Marijampolės triatlono draugija | TRI-FUN-18M | M25 | high | M25×1 | * → * |
+| 28 | Gintarė AŠMONTAITĖ | Love Streams Running | TRI-FUN-18M | M25 | high | M25×1 | 5 → 1 |
+| 1 | Justinas URBA | Kauno plaukimo mokykla | TRI-FUN-16V | — | unmatched | — | * → * |
+| 2 | Deividas KAZLAUSKAS | Kauno plaukimo mokykla | TRI-FUN-13V | — | unmatched | — | * → * |
+| 3 | Egidijus JUZONIS | Na, pagauk! | TRI-FUN-40V | — | unmatched | — | * → * |
+| 4 | Kajus RUDOKAS | Kauno plaukimo mokykla | TRI-FUN-16V | — | unmatched | — | 1 → None |
+| 5 | Aurimas GUDAITIS | TRItonas | TRI-FUN-18V | — | unmatched | — | 1 → None |
+| 6 | Martynas KUTKA | TRItonas | TRI-FUN-13V | — | unmatched | — | 1 → None |
+| 7 | Irmantas KUBILIUS |  | TRI-FUN-40V | — | unmatched | — | 1 → None |
+| 8 | Kristupas JANČIUS | SSC - BTT | TRI-FUN-13V | — | unmatched | — | 2 → None |
+| 10 | Gintaras MAŽEIKA |  | TRI-FUN-40V | — | unmatched | — | 3 → None |
+| 11 | Haroldas KUTKA | TRItonas | TRI-FUN-40V | — | unmatched | — | 4 → None |
+| 12 | Marius DOBILAS |  | TRI-FUN-18V | — | unmatched | — | 2 → None |
+| 15 | Emilija VASILJEVAITĖ | Aukštaitijos plaukimo - triatlono akademija | TRI-FUN-13M | — | unmatched | — | * → * |
+| 17 | Edita VAREIKĖ | Trakų Triatlono Būrelis | TRI-FUN-18M | — | unmatched | — | 1 → None |
+| 18 | Gustė KUBILIŪTĖ | TRItonas | TRI-FUN-16M | — | unmatched | — | 1 → None |
+| 19 | Dominykas VAINORIUS | Klaipėdos Triatlono Klubas | TRI-FUN-13V | — | unmatched | — | 3 → None |
+| 20 | Ramūnas URBONAVIČIUS | Run4Fun | TRI-FUN-40V | — | unmatched | — | 6 → None |
+| 21 | Rima KONTENYTĖ | BTT | TRI-FUN-18M | — | unmatched | — | 2 → None |
+| 22 | Tomas VAINORIUS | Klaipėdos Triatlono Klubas | TRI-FUN-40V | — | unmatched | — | 7 → None |
+| 23 | Marija PETKUTĖ | Kauno plaukimo mokykla | TRI-FUN-16M | — | unmatched | — | 2 → None |
+| 24 | Emilis GYLYS | TRItonas | TRI-FUN-16V | — | unmatched | — | 2 → None |
+| 25 | Gabriele BUDNIKAITE |  | TRI-FUN-18M | — | unmatched | — | 3 → None |
+| 26 | Paulius ŽEKYS | IKIGAI team | TRI-FUN-18V | — | unmatched | — | 3 → None |
+| 27 | Simona SAVICKAITĖ |  | TRI-FUN-18M | — | unmatched | — | 4 → None |
+| 29 | Ieva ŽURUMSKAITĖ | TriFamily | TRI-FUN-18M | — | unmatched | — | 6 → None |
+| 30 | Ramunas KELIUOTIS |  | TRI-FUN-40V | — | unmatched | — | 8 → None |
+| 31 | Asta STAVECKIENĖ |  | TRI-FUN-40M | — | unmatched | — | 1 → None |
+| 32 | Neringa KRIŠČIŪNIENĖ | Marijampolės triatlono draugija | TRI-FUN-18M | — | unmatched | — | 7 → None |
+| 33 | Rūta SUDAKOVIENĖ | IKIGAI team | TRI-FUN-18M | — | unmatched | — | 8 → None |
+| 34 | Vilma KUBILĖ |  | TRI-FUN-40M | — | unmatched | — | 2 → None |
+| 35 | Kamilė JUODEIKĖ | Kauno plaukimo mokykla | TRI-FUN-13M | — | unmatched | — | 1 → None |
+| 36 | Aušra APOLSKIENĖ | Trakų Triatlono Būrelis | TRI-FUN-40M | — | unmatched | — | 3 → None |
+| 37 | Glorija DIEČKĖ |  | TRI-FUN-18M | — | unmatched | — | 9 → None |
+| 38 | Evija BERTAŠIŪTĖ | STI | - | — | unmatched | — | 1 → None |
+| 39 | Evaldas BRAČIULIS |  | TRI-FUN-18V | — | unmatched | — | 4 → None |
+
+#### DRUSKININKŲ TRIATLONAS - LTT 5 (2023-09-02) — sd
+
+| Pos | Name | Club | Original | Inferred | Confidence | Candidates | GROUP POS (orig → new) |
+|---|---|---|---|---|---|---|---|
+| 54 | Arimantas SAKALAS | BTT | ∅ | — | unmatched | — | unchanged |
+
+#### DRUSKININKŲ TRIATLONAS - LTT 5 (2023-09-02) — trifun
+
+| Pos | Name | Club | Original | Inferred | Confidence | Candidates | GROUP POS (orig → new) |
+|---|---|---|---|---|---|---|---|
+| 1 | Justinas URBA | Kauno plaukimo mokykla | TRI-FUN-16V | — | unmatched | — | unchanged |
+| 2 | Jonas VENCKŪNAS | Kauno plaukimo mokykla | TRI-FUN-13V | — | unmatched | — | unchanged |
+| 3 | Aurimas GUDAITIS | TRItonas | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 4 | Kristupas TAMUTIS | BTT | TRI-FUN-13V | — | unmatched | — | unchanged |
+| 5 | Deividas KAZLAUSKAS | Kauno plaukimo mokykla | TRI-FUN-13V | — | unmatched | — | unchanged |
+| 6 | Egidijus JUZONIS | Na, pagauk! | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 7 | Kristupas KENSTAVIČIUS | SSC BTT | TRI-FUN-13V | — | unmatched | — | unchanged |
+| 8 | Kajus RUDOKAS | Kauno plaukimo mokykla | TRI-FUN-16V | — | unmatched | — | unchanged |
+| 9 | Justinas BABKIN | SSC BTT | TRI-FUN-13V | — | unmatched | — | unchanged |
+| 10 | Kristupas JANČIUS | SSC BTT | TRI-FUN-13V | — | unmatched | — | unchanged |
+| 11 | Martynas KUTKA | TRItonas | TRI-FUN-13V | — | unmatched | — | unchanged |
+| 12 | Irmantas KUBILIUS |  | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 13 | Mantas VAREIKA | Trakų Triatlono Būrelis | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 14 | Lėja BUBULAITĖ | B U B U L A I T Ė | TRI-FUN-13M | — | unmatched | — | unchanged |
+| 15 | Gintaras MAŽEIKA |  | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 16 | Emilija VASILJEVAITĖ | Aukštaitijos plaukimo - triatlono akademija | TRI-FUN-13M | — | unmatched | — | unchanged |
+| 17 | Darius AIDIETIS | F.O.C.U.S. running | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 18 | Haroldas KUTKA | TRItonas | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 19 | Adas ZAKARAUSKAS |  | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 20 | Marius DOBILAS |  | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 21 | Edita VAREIKĖ | Trakų Triatlono Būrelis | TRI-FUN-18M | — | unmatched | — | unchanged |
+| 22 | Gytis BIELINIS |  | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 23 | Danielius GOKAS |  | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 24 | Rapolas DANILEVICIUS |  | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 25 | Domantas PEMPĖ |  | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 26 | Jokūbas JANUŠKEVIČIUS |  | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 27 | Audrius KLIMAITIS | Svetimo skausmo nebūna | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 28 | Emilis GYLYS | TRItonas | TRI-FUN-16V | — | unmatched | — | unchanged |
+| 29 | Justas PIRINAUSKAS |  | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 30 | ANDRIUS KEMERIS |  | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 31 | Saulė RIMKEVIČIŪTĖ | SSC BTT | TRI-FUN-13M | — | unmatched | — | unchanged |
+| 32 | Simonas  ČIUŽAS |  | TRI-FUN-13V | — | unmatched | — | unchanged |
+| 33 | Gustė KUBILIŪTĖ | TRItonas | TRI-FUN-16M | — | unmatched | — | unchanged |
+| 34 | Modestas KUTKA | TRItonas | TRI-FUN-13V | — | unmatched | — | unchanged |
+| 35 | Tomas VAINORIUS | Klaipėdos Triatlono Klubas | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 36 | Kristupas GUNTIS |  | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 37 | Marija PETKUTĖ | Kauno plaukimo mokykla | TRI-FUN-16M | — | unmatched | — | unchanged |
+| 38 | Tajus KOLYČIUS | Panevėžio sporto centras | ∅ | — | unmatched | — | unchanged |
+| 39 | Dominykas VAINORIUS | Klaipėdos Triatlono Klubas | TRI-FUN-13V | — | unmatched | — | unchanged |
+| 40 | Rima KONTENYTĖ | BTT | TRI-FUN-18M | — | unmatched | — | unchanged |
+| 41 | Ignas ŠIMUKONIS |  | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 42 | Julija LAUKIENĖ | IRONMAMA | TRI-FUN-18M | — | unmatched | — | unchanged |
+| 43 | Ramūnas URBONAVIČIUS | Run4fun | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 44 | Vytautas PETKUS | Kauno BMK | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 46 | Deimantė ABRAŠKEVIČŪTĖ | TSK Darna | TRI-FUN-13M | — | unmatched | — | unchanged |
+| 47 | Ernestas ABRAŠKEVIČIUS | TSK Darna | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 48 | Roberta PRELGAUSKIENE | IRONMAMA | TRI-FUN-18M | — | unmatched | — | unchanged |
+| 49 | Gabrielė BUDNIKAITĖ | Trakų Triatlono Būrelis | TRI-FUN-18M | — | unmatched | — | unchanged |
+| 50 | Liepa TAMUTYTĖ | BTT | TRI-FUN-13M | — | unmatched | — | unchanged |
+| 51 | Povilas GASIŪNAS |  | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 52 | Jonas MEILUTIS | **HighPeaks Lietuva** | TRI-FUN-16V | — | unmatched | — | unchanged |
+| 53 | Goda ŽAKIENĖ | IRONMAMA | TRI-FUN-18M | — | unmatched | — | unchanged |
+| 54 | Anna KIAUŠAS | TRItonas | TRI-FUN-18M | — | unmatched | — | unchanged |
+| 55 | Andriejus GOLOŠČAPOVAS |  | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 56 | Saulius STANKEVIČIUS | OK Javonis | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 57 | Mark ZAICIK | KontoraLT | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 58 | Simona SOFRONIA |  | TRI-FUN-18M | — | unmatched | — | unchanged |
+| 59 | Simona SAVICKAITĖ |  | TRI-FUN-18M | — | unmatched | — | unchanged |
+| 60 | Darius SABANAVICIUS |  | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 61 | Julija KARUŽAITĖ |  | TRI-FUN-18M | — | unmatched | — | unchanged |
+| 62 | Vilma KUBILĖ | Trakų Triatlono Būrelis | TRI-FUN-40M | — | unmatched | — | unchanged |
+| 63 | Kamilė JUODEIKĖ | Kauno plaukimo mokykla | TRI-FUN-13M | — | unmatched | — | unchanged |
+| 64 | Jurga GIRDZIJAUSKAITE - KABELKE | TRItonas | TRI-FUN-18M | — | unmatched | — | unchanged |
+| 65 | Neringa KRIŠČIŪNIENĖ | Marijampolės triatlono draugija | TRI-FUN-18M | — | unmatched | — | unchanged |
+| 66 | Simona NORKINA | Kiemaitis | TRI-FUN-18M | — | unmatched | — | unchanged |
+| 67 | Asta STAVECKIENĖ |  | TRI-FUN-40M | — | unmatched | — | unchanged |
+| 68 | Ramunas KELIUOTIS |  | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 69 | Liepa GERVELĖ | TRItonas | TRI-FUN-13M | — | unmatched | — | unchanged |
+| 70 | Giedrius SEDEKERSKIS |  | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 71 | Darius PUKNYS |  | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 72 | Vytautas BENDORAITIS | Kiemaitis | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 73 | Aleksandr ZURAVSKIJ |  | TRI-FUN-18V | — | unmatched | — | unchanged |
+| 74 | Kostas KUKENYS | TRItonas | ∅ | — | unmatched | — | unchanged |
+| 75 | Auringa KAMINSKAITĖ |  | TRI-FUN-40M | — | unmatched | — | unchanged |
+| 76 | Ina LYSENKOVA | Klaipėdos Triatlono Klubas | TRI-FUN-18M | — | unmatched | — | unchanged |
+| 77 | Liucijus AMBRAŠKA |  | TRI-FUN-40V | — | unmatched | — | unchanged |
+| 78 | Dominykas VAITKUS | TRItonas | TRI-FUN-13V | — | unmatched | — | unchanged |
+| - | Rokas AIDIETIS |  | TRI-FUN-13V | — | unmatched | — | unchanged |
 
 #### SKAYLINK TRAKŲ TRIATLONAS LTT 2 (2023-07-02) — od
 
 | Pos | Name | Club | Original | Inferred | Confidence | Candidates | GROUP POS (orig → new) |
 |---|---|---|---|---|---|---|---|
-| 3 | Airidas GRAŽINSKIS | KAM | ∅ | V25 | high | V25×1 | None → * |
-| 7 | Vytas VASILEVIČIUS | Lietuvos kariuomenė | ∅ | V40 | high | V40×1 | None → 1 |
-| 8 | Vytautas JAZEPČIKAS | TRItonas | ∅ | V25 | high | V25×1 | None → 1 |
-| 9 | Marijus BUTRIMAVIČIUS | Trakų Triatlono Būrelis | ∅ | V40 | high | V40×1 | None → 2 |
+| 3 | Airidas GRAŽINSKIS | KAM | ∅ | V25 | high | V25×3 | None → * |
+| 4 | Povilas PEČIUKONIS | **HighPeaks Lietuva** | ∅ | V25 | high | V25×3 | None → 1 |
+| 5 | Povilas STRAZDAS | BTT | ∅ | V25 | high | V25×1 | None → 2 |
+| 6 | Mantas JABLONSKIS | Green Team | ∅ | V25 | high | V25×3 | None → 3 |
+| 7 | Vytas VASILEVIČIUS | Lietuvos kariuomenė | ∅ | V40 | high | V40×2 | None → 1 |
+| 8 | Vytautas JAZEPČIKAS | TRItonas | ∅ | V25 | high | V25×1 | None → 4 |
+| 9 | Marijus BUTRIMAVIČIUS | Trakų Triatlono Būrelis | ∅ | V40 | high | V40×4 | None → 2 |
 | 10 | Gediminas LINKUS | Kauno Triatlono Klubas | ∅ | V40 | high | V40×1 | None → 3 |
-| 11 | Donatas STULGYS | KAM | ∅ | V40 | high | V40×1 | None → 4 |
-| 12 | Vilgaudas KAUPA | LAPIUKAI | ∅ | V25 | high | V25×1 | None → 2 |
-| 15 | Tomas BULOTAS | BTT | ∅ | V50 | high | V50×1 | None → 1 |
-| 19 | Žilvinas TREINYS | IKIGAI team | ∅ | V40 | high | V40×1 | None → 5 |
-| 21 | Arūnas KRIKŠTAPONIS | **HighPeaks Lietuva** | ∅ | V25 | high | V25×1 | None → 3 |
-| 23 | Tadas LUKAUSKIS | Team Ignite | ∅ | V20 | high | V20×1 | None → 1 |
+| 11 | Donatas STULGYS | KAM | ∅ | V40 | high | V40×4 | None → 4 |
+| 12 | Vilgaudas KAUPA | LAPIUKAI | ∅ | V25 | high | V25×2 | None → 5 |
+| 13 | Titas ŠIJANAS | Love Streams Running | ∅ | V25 | high | V25×1 | None → 6 |
+| 14 | Mantas MARCINKEVIČIUS | TRItonas | ∅ | V40 | high | V40×3 | None → 5 |
+| 15 | Tomas BULOTAS | BTT | ∅ | V50 | high | V50×3 | None → 1 |
+| 19 | Žilvinas TREINYS | IKIGAI team | ∅ | V40 | high | V40×3 | None → 6 |
+| 20 | Mantas KUKENYS | TRItonas | ∅ | V40 | high | V40×3 | None → 7 |
+| 21 | Arūnas KRIKŠTAPONIS | **HighPeaks Lietuva** | ∅ | V25 | high | V25×2 | None → 7 |
+| 22 | Paulius IVANAUSKAS | **HighPeaks Lietuva** | ∅ | V25 | high | V25×1 | None → 8 |
+| 23 | Tadas LUKAUSKIS | Team Ignite | ∅ | V20 | high | V20×4 | None → 1 |
 | 24 | Aleksandras ZAMORSKIS | BTT | ∅ | V50 | high | V50×1 | None → 2 |
-| 31 | Daniel Vitalij KOSTKIN | Trakų Triatlono Būrelis | ∅ | V25 | high | V25×1 | None → 4 |
-| 32 | Tadas DIDVALIS | Jaunimo linija | ∅ | V25 | high | V25×1 | None → 5 |
-| 33 | Raimondas GINCAS | Trakų Triatlono Būrelis | ∅ | V45 | high | V45×1 | None → 1 |
-| 36 | Marijus ŪSAS | Trakų Triatlono Būrelis | ∅ | V20 | high | V20×1 | None → 2 |
-| 37 | Andrius SEBECKIS | Klaipėdos Triatlono Klubas | ∅ | V25 | high | V25×1 | None → 6 |
-| 41 | Gabrielė GARBAUSKAITĖ | Panevėžio triatlono klubas | ∅ | M20 | high | M20×1 | None → * |
-| 42 | Edgaras GALDIKAS | - | ∅ | V25 | high | V25×1 | None → 7 |
-| 44 | Pranas URBONAS | - | ∅ | V25 | high | V25×1 | None → 8 |
+| 27 | Žilvinas ŠAPRANAUSKAS | **HighPeaks Lietuva** | ∅ | V25 | high | V25×1 | None → 9 |
+| 29 | Unė NARKŪNAITĖ | BTT | ∅ | M20 | high | M20×1 | None → * |
+| 30 | Augustinas BOJARINAS | Love Streams Running | ∅ | V25 | high | V25×1 | None → 10 |
+| 31 | Daniel Vitalij KOSTKIN | Trakų Triatlono Būrelis | ∅ | V25 | high | V25×1 | None → 11 |
+| 32 | Tadas DIDVALIS | Jaunimo linija | ∅ | V25 | high | V25×4 | None → 12 |
+| 33 | Raimondas GINCAS | Trakų Triatlono Būrelis | ∅ | V45 | high | V45×4 | None → 1 |
+| 34 | Simas RINDEIKIS | Klaipėdos Triatlono Klubas | ∅ | V40 | high | V40×1 | None → 8 |
+| 36 | Marijus ŪSAS | Trakų Triatlono Būrelis | ∅ | V20 | high | V20×3 | None → 2 |
+| 37 | Andrius SEBECKIS | Klaipėdos Triatlono Klubas | ∅ | V25 | high | V25×4 | None → 13 |
+| 38 | Nerijus BENIUŠIS | KAM | ∅ | V25 | high | V25×2 | None → 14 |
+| 40 | Renatas BELEVIČIUS | Trakų Triatlono Būrelis | ∅ | V40 | high | V40×1 | None → 9 |
+| 41 | Gabrielė GARBAUSKAITĖ | Panevėžio triatlono klubas | ∅ | M20 | high | M20×2 | None → * |
+| 42 | Edgaras GALDIKAS | - | ∅ | V25 | high | V25×2 | None → 15 |
+| 43 | Giedrius EITAVICIUS | Klaipėdos Triatlono Klubas | ∅ | V25 | high | V25×1 | None → 16 |
+| 44 | Pranas URBONAS | - | ∅ | V25 | high | V25×4 | None → 17 |
 | 45 | Rolandas RUPŠLAUKIS | Klaipėdos Triatlono Klubas | ∅ | V45 | high | V45×1 | None → 2 |
-| 46 | Simas DAMBRAUSKAS | S-Sportas | ∅ | V25 | high | V25×1 | None → 9 |
+| 46 | Simas DAMBRAUSKAS | S-Sportas | ∅ | V25 | high | V25×4 | None → 18 |
 | 47 | Evaldas ŠLEŽEVIČIUS | - | ∅ | V45 | high | V45×1 | None → 3 |
-| 48 | Darius BIRŽIETIS | - | ∅ | V50 | high | V50×1 | None → 3 |
-| 49 | Mintautas ŠUKYS | KAM | ∅ | V25 | high | V25×1 | None → 10 |
-| 55 | Justinas GEDVILAS | BTT | ∅ | V25 | high | V25×1 | None → 11 |
-| 56 | Deividas JANČIUS | Kauno Triatlono Klubas | ∅ | V40 | high | V40×1 | None → 6 |
-| 59 | Vytautas TAMOŠIŪNAS | Liberalų sąjūdis | ∅ | V45 | high | V45×1 | None → 4 |
-| 60 | Markas GRINEVIČIUS | Million Steps | ∅ | V25 | high | V25×1 | None → 12 |
-| 63 | Arunas BUTENS | LSR | ∅ | V25 | high | V25×1 | None → 13 |
-| 64 | Edgaras AŽUKAS | - | ∅ | V25 | high | V25×1 | None → 14 |
-| 65 | Marius TURULIS | Šviesos kariai | ∅ | V45 | high | V45×1 | None → 5 |
-| 66 | Egidijus BUIKA | Kauno Triatlono Klubas | ∅ | V45 | high | V45×1 | None → 6 |
-| 76 | Rūta CIMARMANAITĖ | TRItonas | ∅ | M25 | high | M25×1 | None → 1 |
-| 81 | Greta URBUTYTĖ | Trakų Triatlono Būrelis | ∅ | M25 | high | M25×1 | None → 2 |
-| 83 | Povilas ŠIUGŽDINIS | Team Ignite | ∅ | V20 | high | V20×1 | None → 3 |
-| 85 | Jonas STASIUKYNAS | BTT | ∅ | V45 | high | V45×1 | None → 7 |
-| 87 | Aurimas GIRSKIS | Klaipėdos Triatlono Klubas | ∅ | V25 | high | V25×1 | None → 15 |
-| 89 | Žilvinas ČIUŽAS | - | ∅ | V45 | high | V45×1 | None → 8 |
-| 94 | Sigita ŠIDLAUSKIENĖ | TRItonas | ∅ | M40 | high | M40×1 | None → 1 |
-| 97 | Kristina ČIUŽIENĖ | - | ∅ | M40 | high | M40×1 | None → 2 |
-| 101 | Laimis INDRIŠIŪNAS | Cirko meškutės | ∅ | V25 | high | V25×1 | None → 16 |
-| 103 | Paulius NAGYS | Adeo Web | ∅ | V25 | high | V25×1 | None → 17 |
-| 112 | Neringa MAKARSKIENĖ | Klaipėdos Triatlono Klubas | ∅ | M25 | high | M25×1 | None → 3 |
-| 113 | Sergejus ABAKUMOVAS | Grant Thornton Baltic | ∅ | V25 | high | V25×1 | None → 18 |
-| 115 | Elena ŠIMAITIENĖ | Nemėžio unguriai | ∅ | M25 | high | M25×1 | None → 4 |
-| 131 | Antanas LUKAŠEVIČIUS | Mett | ∅ | V40 | high | V40×1 | None → 7 |
-| 133 | Mantas GRICIUS | **HighPeaks Lietuva** | ∅ | V25 | high | V25×1 | None → 19 |
-| 140 | Andrius PILIPUITIS | Cirko meškutės | ∅ | V40 | high | V40×1 | None → 8 |
-| 161 | Antanas NORKEVIČIUS | - | ∅ | V50 | high | V50×1 | None → 4 |
-| 164 | Ingrida BARTKUTĖ | TRItonas | ∅ | M40 | high | M40×1 | None → 3 |
-| 169 | Andrius BRUŽAS | - | ∅ | V25 | high | V25×1 | None → 20 |
-| 180 | Marija VOROBJOVAITĖ | **HighPeaks Lietuva** | ∅ | M25 | high | M25×1 | None → 5 |
-| 192 | Julija BAŠKYTĖ | KAM | ∅ | M25 | high | M25×1 | None → 6 |
-| 197 | Vykintas GRINKEVICIUS | - | ∅ | V25 | high | V25×1 | None → 21 |
-| - | Kęstutis KAUPAS | - | ∅ | V25 | high | V25×1 | None → None |
-| - | Ernestas ČERNIUS | - | ∅ | V25 | high | V25×1 | None → None |
+| 48 | Darius BIRŽIETIS | - | ∅ | V50 | high | V50×3 | None → 3 |
+| 49 | Mintautas ŠUKYS | KAM | ∅ | V25 | high | V25×3 | None → 19 |
+| 50 | Irmantas GRUBINSKAS | Panevėžio triatlono klubas | ∅ | V40 | high | V40×1 | None → 10 |
+| 51 | Arūnas MACIULEVIČIUS | TRItonas | ∅ | V45 | high | V45×3 | None → 4 |
+| 53 | Tadas GRINCEVIČIUS | LSR | ∅ | V25 | high | V25×1 | None → 20 |
+| 55 | Justinas GEDVILAS | BTT | ∅ | V25 | high | V25×1 | None → 21 |
+| 56 | Deividas JANČIUS | Kauno Triatlono Klubas | ∅ | V40 | high | V40×2 | None → 11 |
+| 59 | Vytautas TAMOŠIŪNAS | Liberalų sąjūdis | ∅ | V45 | high | V45×4 | None → 5 |
+| 60 | Markas GRINEVIČIUS | Million Steps | ∅ | V25 | high | V25×3 | None → 22 |
+| 61 | Sarunas RADZEVICIUS | - | ∅ | V25 | high | V25×2 | None → 23 |
+| 62 | Nerijus BALTRIMAITIS | - | ∅ | V40 | high | V40×1 | None → 12 |
+| 63 | Arunas BUTENS | LSR | ∅ | V25 | high | V25×2 | None → 24 |
+| 64 | Edgaras AŽUKAS | - | ∅ | V25 | high | V25×4 | None → 25 |
+| 65 | Marius TURULIS | Šviesos kariai | ∅ | V45 | high | V45×3 | None → 6 |
+| 66 | Egidijus BUIKA | Kauno Triatlono Klubas | ∅ | V45 | high | V45×4 | None → 7 |
+| 68 | Matas MAČIULAITIS | - | ∅ | V25 | high | V25×1 | None → 26 |
+| 70 | Viktorija KALVELYTĖ | Kauno Triatlono Klubas | ∅ | M25 | high | M25×1 | None → 1 |
+| 72 | Juozas KARMAZA | Vieta jusu reklamai | ∅ | V40 | high | V40×2 | None → 13 |
+| 76 | Rūta CIMARMANAITĖ | TRItonas | ∅ | M25 | high | M25×3 | None → 2 |
+| 78 | Vygantas VITKUS | Kauno Triatlono Klubas | ∅ | V55 | high | V55×1 | None → 1 |
+| 81 | Greta URBUTYTĖ | Trakų Triatlono Būrelis | ∅ | M25 | high | M25×1 | None → 3 |
+| 83 | Povilas ŠIUGŽDINIS | Team Ignite | ∅ | V20 | high | V20×4 | None → 3 |
+| 84 | Marius ŽAKAS | - | ∅ | V45 | high | V45×2 | None → 8 |
+| 85 | Jonas STASIUKYNAS | BTT | ∅ | V45 | high | V45×4 | None → 9 |
+| 87 | Aurimas GIRSKIS | Klaipėdos Triatlono Klubas | ∅ | V25 | high | V25×4 | None → 27 |
+| 88 | Gytis GEDMINAS | S-Sportas | ∅ | V25 | high | V25×1 | None → 28 |
+| 89 | Žilvinas ČIUŽAS | - | ∅ | V45 | high | V45×3 | None → 10 |
+| 90 | Eglė RAGAIŠYTĖ | **HighPeaks Lietuva** | ∅ | M25 | high | M25×3 | None → 4 |
+| 93 | Ignas ZAREVICIUS | **HighPeaks Lietuva** | ∅ | V25 | high | V25×1 | None → 29 |
+| 94 | Sigita ŠIDLAUSKIENĖ | TRItonas | ∅ | M40 | high | M40×4 | None → 1 |
+| 97 | Kristina ČIUŽIENĖ | - | ∅ | M40 | high | M40×3 | None → 2 |
+| 101 | Laimis INDRIŠIŪNAS | Cirko meškutės | ∅ | V25 | high | V25×3 | None → 30 |
+| 102 | Mantas SIDEKERSKIS | **HighPeaks Lietuva** | ∅ | V40 | high | V40×1 | None → 14 |
+| 103 | Paulius NAGYS | Adeo Web | ∅ | V25 | high | V25×1 | None → 31 |
+| 106 | Mantas PŪTYS | Runglorious Bastards | ∅ | V40 | high | V40×1 | None → 15 |
+| 107 | Grigas ŠUKYS | - | ∅ | V25 | high | V25×2 | None → 32 |
+| 109 | Darius ČIURINSKAS | ORRE | ∅ | V50 | high | V50×3 | None → 4 |
+| 110 | Aliaksandr PAZHARANKA | Tristyle | ∅ | V25 | high | V25×1 | None → 33 |
+| 111 | Rytis BENAITIS | Raudondvaris | ∅ | V25 | high | V25×1 | None → 34 |
+| 112 | Neringa MAKARSKIENĖ | Klaipėdos Triatlono Klubas | ∅ | M25 | high | M25×4 | None → 5 |
+| 113 | Sergejus ABAKUMOVAS | Grant Thornton Baltic | ∅ | V25 | high | V25×2 | None → 35 |
+| 115 | Elena ŠIMAITIENĖ | Nemėžio unguriai | ∅ | M25 | high | M25×4 | None → 6 |
+| 120 | Gražvydas LAŽAUSKAS | Šešios Trim | ∅ | V25 | high | V25×1 | None → 36 |
+| 128 | Rimantas SIMAITIS | Cobalt | ∅ | V45 | high | V45×1 | None → 11 |
+| 131 | Antanas LUKAŠEVIČIUS | Mett | ∅ | V40 | high | V40×1 | None → 16 |
+| 133 | Mantas GRICIUS | **HighPeaks Lietuva** | ∅ | V25 | high | V25×4 | None → 37 |
+| 136 | Paulius ANDRIEKUS | - | ∅ | V25 | high | V25×1 | None → 38 |
+| 137 | Gerda KLIMAITĖ | LSR | ∅ | M25 | high | M25×3 | None → 7 |
+| 140 | Andrius PILIPUITIS | Cirko meškutės | ∅ | V40 | high | V40×3 | None → 17 |
+| 143 | Karolis ANIULIS | - | ∅ | V25 | high | V25×1 | None → 39 |
+| 147 | Aurimas SADAUSKAS | **HighPeaks Lietuva** | ∅ | V40 | high | V40×2 | None → 18 |
+| 148 | Tomas KAZLAUSKAS | **HighPeaks Lietuva** | ∅ | V25 | high | V25×1 | None → 40 |
+| 151 | Aleksandrs KOŠANSKIS | TusaTriTeam | ∅ | V25 | high | V25×1 | None → 41 |
+| 161 | Antanas NORKEVIČIUS | - | ∅ | V50 | high | V50×2 | None → 5 |
+| 164 | Ingrida BARTKUTĖ | TRItonas | ∅ | M40 | high | M40×2 | None → 3 |
+| 169 | Andrius BRUŽAS | - | ∅ | V25 | high | V25×2 | None → 42 |
+| 176 | Egidijus ČIVILIS | F.O.C.U.S. running | ∅ | V55 | high | V55×1 | None → 2 |
+| 179 | Laura PETRUSEVICIENE | BTT | ∅ | M50 | high | M50×1 | None → 1 |
+| 180 | Marija VOROBJOVAITĖ | **HighPeaks Lietuva** | ∅ | M25 | high | M25×1 | None → 8 |
+| 181 | Gytenis BALČIŪNAS | - | ∅ | V40 | high | V40×1 | None → 19 |
+| 185 | Meinardas VALKEVIČIUS | TRItonas | ∅ | V25 | high | V25×3 | None → 43 |
+| 187 | Darya SLIZH | Shift4 Payments | ∅ | M25 | high | M25×1 | None → 9 |
+| 188 | Rimantas BENAITIS | Raudondvaris | ∅ | V60 | high | V60×1 | None → 1 |
+| 190 | Algirdas KRUPAVIČIUS | - | ∅ | V50 | high | V50×1 | None → 6 |
+| 192 | Julija BAŠKYTĖ | KAM | ∅ | M25 | high | M25×1 | None → 10 |
+| 197 | Vykintas GRINKEVICIUS | - | ∅ | V25 | high | V25×2 | None → 44 |
+| - | Nerijus BEZRUKOVAS | Love Streams Running | ∅ | V45 | high | V45×1 | None → None |
+| - | Kęstutis KAUPAS | - | ∅ | V25 | high | V25×3 | None → None |
+| - | Kęstutis PRIŠMANTAS | - | ∅ | V25 | high | V25×1 | None → None |
+| - | Ernestas ČERNIUS | - | ∅ | V25 | high | V25×2 | None → None |
 | 1 | Artūrs LIEPA | TRI KAN | ∅ | — | unmatched | — | None → * |
 | 2 | Lukas PROKOPAVIČIUS | - | ∅ | — | unmatched | — | None → * |
-| 4 | Povilas PEČIUKONIS | **HighPeaks Lietuva** | ∅ | — | unmatched | — | None → None |
-| 5 | Povilas STRAZDAS | BTT | ∅ | — | unmatched | — | None → None |
-| 6 | Mantas JABLONSKIS | Green Team | ∅ | — | unmatched | — | None → None |
-| 13 | Titas ŠIJANAS | Love Streams Running | ∅ | — | unmatched | — | None → None |
-| 14 | Mantas MARCINKEVIČIUS | TRItonas | ∅ | — | unmatched | — | None → None |
 | 16 | Kasparas ŽIŪRAITIS | Kauno Triatlono Klubas | ∅ | — | unmatched | — | None → None |
 | 17 | Aliaksei ADAMOVICH | Panic Crew | ∅ | — | unmatched | — | None → None |
 | 18 | Mantas LYNIKAS | DESRA | ∅ | — | unmatched | — | None → None |
-| 20 | Mantas KUKENYS | TRItonas | ∅ | — | unmatched | — | None → None |
-| 22 | Paulius IVANAUSKAS | **HighPeaks Lietuva** | ∅ | — | unmatched | — | None → None |
 | 25 | Marius SKAISGIRYS | BTT | ∅ | — | unmatched | — | None → None |
 | 26 | Inga PAPLAUSKE | TRItonas | ∅ | — | unmatched | — | None → * |
-| 27 | Žilvinas ŠAPRANAUSKAS | **HighPeaks Lietuva** | ∅ | — | unmatched | — | None → None |
 | 28 | Andrius OGINTAS | Klaipėdos Triatlono Klubas | ∅ | — | unmatched | — | None → None |
-| 29 | Unė NARKŪNAITĖ | BTT | ∅ | — | unmatched | — | None → * |
-| 30 | Augustinas BOJARINAS | Love Streams Running | ∅ | — | unmatched | — | None → None |
-| 34 | Simas RINDEIKIS | Klaipėdos Triatlono Klubas | ∅ | — | unmatched | — | None → None |
 | 35 | Vaidotas POŠKUS | - | ∅ | — | unmatched | — | None → None |
-| 38 | Nerijus BENIUŠIS | KAM | ∅ | — | unmatched | — | None → None |
 | 39 | Robertas KERPYS | BTT | ∅ | — | unmatched | — | None → None |
-| 40 | Renatas BELEVIČIUS | Trakų Triatlono Būrelis | ∅ | — | unmatched | — | None → None |
-| 43 | Giedrius EITAVICIUS | Klaipėdos Triatlono Klubas | ∅ | — | unmatched | — | None → None |
-| 50 | Irmantas GRUBINSKAS | Panevėžio triatlono klubas | ∅ | — | unmatched | — | None → None |
-| 51 | Arūnas MACIULEVIČIUS | TRItonas | ∅ | — | unmatched | — | None → None |
 | 52 | Laurynas STASIKĖLIS | BTT | ∅ | — | unmatched | — | None → None |
-| 53 | Tadas GRINCEVIČIUS | LSR | ∅ | — | unmatched | — | None → None |
 | 54 | Jaunius KADŪNAS | Love Streams Running | ∅ | — | unmatched | — | None → None |
 | 57 | Arnas ŠIMONIS | - | ∅ | — | unmatched | — | None → None |
 | 58 | Aivaras UMANTAS | Tobula instaliacija | ∅ | — | unmatched | — | None → None |
-| 61 | Sarunas RADZEVICIUS | - | ∅ | — | unmatched | — | None → None |
-| 62 | Nerijus BALTRIMAITIS | - | ∅ | — | unmatched | — | None → None |
 | 67 | Viktor SVYRYDENKO | - | ∅ | — | unmatched | — | None → None |
-| 68 | Matas MAČIULAITIS | - | ∅ | — | unmatched | — | None → None |
 | 69 | Dzmitry SAKOLIKAU | - | ∅ | — | unmatched | — | None → None |
-| 70 | Viktorija KALVELYTĖ | Kauno Triatlono Klubas | ∅ | — | unmatched | — | None → None |
 | 71 | Donatas GRĖBLIŪNAS | Lietuvos kariuomenė | ∅ | — | unmatched | — | None → None |
-| 72 | Juozas KARMAZA | Vieta jusu reklamai | ∅ | — | unmatched | — | None → None |
 | 73 | Aivaras KATUTIS | - | ∅ | — | unmatched | — | None → None |
 | 74 | Bartas MIKAILA | - | ∅ | — | unmatched | — | None → None |
 | 75 | Aleksandras CHARLAMPOVIČIUS | - | ∅ | — | unmatched | — | None → None |
 | 77 | Mykolas SECKUS | Love Streams Running | ∅ | — | unmatched | — | None → None |
-| 78 | Vygantas VITKUS | Kauno Triatlono Klubas | ∅ | — | unmatched | — | None → None |
 | 79 | Deividas STAŠAITIS | - | ∅ | — | unmatched | — | None → None |
 | 80 | Meškauskas LINAS | BTT | ∅ | — | unmatched | — | None → None |
 | 82 | Nerijus LINKUS | **HighPeaks Lietuva** | ∅ | — | unmatched | — | None → None |
-| 84 | Marius ŽAKAS | - | ∅ | — | unmatched | — | None → None |
 | 86 | Aldas KARTAŠOVAS | - | ∅ | — | unmatched | — | None → None |
-| 88 | Gytis GEDMINAS | S-Sportas | ∅ | — | unmatched | — | None → None |
-| 90 | Eglė RAGAIŠYTĖ | **HighPeaks Lietuva** | ∅ | — | unmatched | — | None → None |
 | 91 | Juozas GERULAITIS | BOAT CREW 2 | ∅ | — | unmatched | — | None → None |
 | 92 | Domantas VAGONIS | Love Streams Running | ∅ | — | unmatched | — | None → None |
-| 93 | Ignas ZAREVICIUS | **HighPeaks Lietuva** | ∅ | — | unmatched | — | None → None |
 | 95 | Arnoldas GAUDIEŠIUS | Swedbank | ∅ | — | unmatched | — | None → None |
 | 96 | Darius BEREIKA | LSR | ∅ | — | unmatched | — | None → None |
 | 98 | Tadas MATUSEVICIUS | - | ∅ | — | unmatched | — | None → None |
 | 99 | Tadas GROMAS | Love Streams Running | ∅ | — | unmatched | — | None → None |
 | 100 | Dalius VIRŠILAS | Sveikiausia Asociacija | ∅ | — | unmatched | — | None → None |
-| 102 | Mantas SIDEKERSKIS | **HighPeaks Lietuva** | ∅ | — | unmatched | — | None → None |
 | 104 | Vidmantas ČIŪTA | - | ∅ | — | unmatched | — | None → None |
 | 105 | Mindaugas GRIŪNAS | - | ∅ | — | unmatched | — | None → None |
-| 106 | Mantas PŪTYS | Runglorious Bastards | ∅ | — | unmatched | — | None → None |
-| 107 | Grigas ŠUKYS | - | ∅ | — | unmatched | — | None → None |
 | 108 | Vitalis GRICIUS | Runglorious Bastards | ∅ | — | unmatched | — | None → None |
-| 109 | Darius ČIURINSKAS | ORRE | ∅ | — | unmatched | — | None → None |
-| 110 | Aliaksandr PAZHARANKA | Tristyle | ∅ | — | unmatched | — | None → None |
-| 111 | Rytis BENAITIS | Raudondvaris | ∅ | — | unmatched | — | None → None |
 | 114 | Vladislavas ČERKASOVAS | - | ∅ | — | unmatched | — | None → None |
 | 116 | Raimundas SLAVINSKAS | Elseta | ∅ | — | unmatched | — | None → None |
 | 117 | Eugenijus ŽVYKAS | TSK Darna | ∅ | — | unmatched | — | None → None |
 | 118 | Titas ČEPAS | **HighPeaks Lietuva** | ∅ | — | unmatched | — | None → None |
 | 119 | Albertas MARTINAITIS | **HighPeaks Lietuva** | ∅ | — | unmatched | — | None → None |
-| 120 | Gražvydas LAŽAUSKAS | Šešios Trim | ∅ | — | unmatched | — | None → None |
 | 121 | Maxim MANTOROV | Tony Resort Team | ∅ | — | unmatched | — | None → None |
 | 122 | Justinas VANSEVICIUS | - | ∅ | — | unmatched | — | None → None |
 | 123 | Marius LAPKAUSKAS | Klaipėdos Triatlono Klubas | ∅ | — | unmatched | — | None → None |
@@ -1650,27 +1904,20 @@ Original values are kept in `AGE GROUP ORIGINAL` / `GROUP POS ORIGINAL`. `GROUP 
 | 125 | Darius MEŠKAUSKAS | - | ∅ | — | unmatched | — | None → None |
 | 126 | Mantas SRĖBALIUS | - | ∅ | — | unmatched | — | None → None |
 | 127 | Marius DAVIDAVIČIUS | - | ∅ | — | unmatched | — | None → None |
-| 128 | Rimantas SIMAITIS | Cobalt | ∅ | — | unmatched | — | None → None |
 | 129 | Andrius PONELIS | - | ∅ | — | unmatched | — | None → None |
 | 130 | Darijus ŽILINSKAS | Utena Runners | ∅ | — | unmatched | — | None → None |
 | 132 | Aurimas RADVILAVIČIUS | - | ∅ | — | unmatched | — | None → None |
 | 134 | Einius MACIJAUSKAS | - | ∅ | — | unmatched | — | None → None |
 | 135 | Egle KARMAZIENE | mybe | ∅ | — | unmatched | — | None → None |
-| 136 | Paulius ANDRIEKUS | - | ∅ | — | unmatched | — | None → None |
-| 137 | Gerda KLIMAITĖ | LSR | ∅ | — | unmatched | — | None → None |
 | 138 | Tomas KĖBLA | ctd. | ∅ | — | unmatched | — | None → None |
 | 139 | Edgaras DUBOVIK | - | ∅ | — | unmatched | — | None → None |
 | 141 | Gaudvydas BUTKUS | - | ∅ | — | unmatched | — | None → None |
 | 142 | Giedrius ANDRIKYS | - | ∅ | — | unmatched | — | None → None |
-| 143 | Karolis ANIULIS | - | ∅ | — | unmatched | — | None → None |
 | 144 | Albertas ČEKAUSKAS | SantaTeam | ∅ | — | unmatched | — | None → None |
 | 145 | Tadas TERESEVIČIUS | - | ∅ | — | unmatched | — | None → None |
 | 146 | Aleksandr MIASNIKOV | - | ∅ | — | unmatched | — | None → None |
-| 147 | Aurimas SADAUSKAS | **HighPeaks Lietuva** | ∅ | — | unmatched | — | None → None |
-| 148 | Tomas KAZLAUSKAS | **HighPeaks Lietuva** | ∅ | — | unmatched | — | None → None |
 | 149 | Andrius BRŪZGA | - | ∅ | — | unmatched | — | None → None |
 | 150 | Jonas AŽUKAS | Bėgimo klubas | ∅ | — | unmatched | — | None → None |
-| 151 | Aleksandrs KOŠANSKIS | TusaTriTeam | ∅ | — | unmatched | — | None → None |
 | 152 | Pavels MATVEKS | - | ∅ | — | unmatched | — | None → None |
 | 153 | Arnas REPEČKA | Ivan beats the gong | ∅ | — | unmatched | — | None → None |
 | 154 | Oleg KACHAEV | - | ∅ | — | unmatched | — | None → None |
@@ -1692,29 +1939,174 @@ Original values are kept in `AGE GROUP ORIGINAL` / `GROUP POS ORIGINAL`. `GROUP 
 | 173 | Luka BARZDAITĖ | USA Florida | ∅ | — | unmatched | — | None → None |
 | 174 | Kristina KAZLAUSKIENĖ | - | ∅ | — | unmatched | — | None → None |
 | 175 | Paulius NAUJOKAS | OCR Baltic Warriors Klaipėda | ∅ | — | unmatched | — | None → None |
-| 176 | Egidijus ČIVILIS | F.O.C.U.S. running | ∅ | — | unmatched | — | None → None |
 | 177 | Andrius RUMBUTIS | - | ∅ | — | unmatched | — | None → None |
 | 178 | Raminta BOZAITĖ | Love Streams Running | ∅ | — | unmatched | — | None → None |
-| 179 | Laura PETRUSEVICIENE | BTT | ∅ | — | unmatched | — | None → None |
-| 181 | Gytenis BALČIŪNAS | - | ∅ | — | unmatched | — | None → None |
 | 182 | Justas KULIAVAS | - | ∅ | — | unmatched | — | None → None |
 | 183 | Žilvinas BARTKUS | - | ∅ | — | unmatched | — | None → None |
 | 184 | Ernestas PETKEVICIUS | 6am | ∅ | — | unmatched | — | None → None |
-| 185 | Meinardas VALKEVIČIUS | TRItonas | ∅ | — | unmatched | — | None → None |
 | 186 | Darius ŽUTAUTAS | SHMUTKE | ∅ | — | unmatched | — | None → None |
-| 187 | Darya SLIZH | Shift4 Payments | ∅ | — | unmatched | — | None → None |
-| 188 | Rimantas BENAITIS | Raudondvaris | ∅ | — | unmatched | — | None → None |
 | 189 | Rimas ANDRIJAUSKAS | - | ∅ | — | unmatched | — | None → None |
-| 190 | Algirdas KRUPAVIČIUS | - | ∅ | — | unmatched | — | None → None |
 | 191 | Vaidas DIRGĖLAS | - | ∅ | — | unmatched | — | None → None |
 | 193 | Rasuolė DRAZDAUSKIENĖ | Decathlon | ∅ | — | unmatched | — | None → None |
 | 194 | Kipras JANČYS | Ramiu veidu | ∅ | — | unmatched | — | None → None |
 | 195 | Hanna NAVUMENKA | Tristyle | ∅ | — | unmatched | — | None → None |
 | 196 | Pavel LADZIATO | Swedbank | ∅ | — | unmatched | — | None → None |
-| - | Nerijus BEZRUKOVAS | Love Streams Running | ∅ | — | unmatched | — | None → None |
 | - | Kasparas BAGDONAS | - | ∅ | — | unmatched | — | None → None |
 | - | Jaunius PINELIS | - | ∅ | — | unmatched | — | None → None |
-| - | Kęstutis PRIŠMANTAS | - | ∅ | — | unmatched | — | None → None |
+
+#### SKAYLINK TRAKŲ TRIATLONAS LTT 2 (2023-07-02) — sd
+
+| Pos | Name | Club | Original | Inferred | Confidence | Candidates | GROUP POS (orig → new) |
+|---|---|---|---|---|---|---|---|
+| 2 | Titas PUMPUTIS | Lietuvos kariuomenė | ∅ | V25 | high | V25×2 | None → * |
+| 3 | Gediminas PAJĖDA | BTT | ∅ | V25 | high | V25×2 | None → * |
+| 5 | Erikas AUKŠTIKALNIS | **HighPeaks Lietuva** | ∅ | V25 | high | V25×3 | None → 1 |
+| 6 | Jonas BELEŠKA | Kauno maratono klubas | ∅ | V25 | high | V25×3 | None → 2 |
+| 7 | Žilvinas GRIGAITIS | Marijampolės triatlono draugija | ∅ | V25 | high | V25×2 | None → 3 |
+| 8 | Eugenijus RAKITINAS | Aukštaitijos plaukimo - triatlono akademija | ∅ | V40 | high | V40×1 | None → 1 |
+| 9 | Eimantas SKALANDIS | Marijampolės triatlono draugija | ∅ | V25 | high | V25×1 | None → 4 |
+| 10 | Vitalijus PETRULIS | KAM | ∅ | V40 | high | V40×3 | None → 2 |
+| 11 | Andrej GERASIMOV | Lietuvos kariuomenė | ∅ | V25 | high | V25×1 | None → 5 |
+| 12 | Aivaras GIEDRAITIS | Lietuvos kariuomenė / BTT | ∅ | V25 | high | V25×4 | None → 6 |
+| 13 | Radoslav LAJEVSKI | Shift4 Payments | ∅ | V25 | high | V25×3 | None → 7 |
+| 14 | Žydrūnas ALEKNA | Lietuvos kariuomenė/HighPeaks Lietuva | ∅ | V45 | high | V45×1 | None → 1 |
+| 15 | Tomas BIZIMAVIČIUS | Kauno Triatlono Klubas | ∅ | V25 | high | V25×2 | None → 8 |
+| 16 | Laurynas NORKUS | Trakų Triatlono Būrelis | ∅ | V40 | high | V40×1 | None → 3 |
+| 17 | Ignas PĖTNIČIA | Kauno plaukimo mokykla | ∅ | V20 | high | V20×2 | None → 1 |
+| 18 | Aistis ŠIMAITIS | Nemėžio unguriai | ∅ | V25 | high | V25×4 | None → 9 |
+| 20 | Audrius JANULYNAS | OK Javonis | ∅ | V25 | high | V25×4 | None → 10 |
+| 21 | Raimundas VOVERIS | S-Sportas | ∅ | V40 | high | V40×4 | None → 4 |
+| 23 | Andrius ARNAŠIUS | Tauragė | ∅ | V25 | high | V25×4 | None → 11 |
+| 24 | Paulius BUDRIKIS | FAKE CAKE | ∅ | V40 | high | V40×1 | None → 5 |
+| 25 | Mindaugas STULGYS | KAM | ∅ | V40 | high | V40×3 | None → 6 |
+| 26 | Vilmantas BARANAUSKAS | LSR | ∅ | V40 | high | V40×3 | None → 7 |
+| 27 | Andrius NACEVICIUS | - | ∅ | V25 | high | V25×4 | None → 12 |
+| 28 | Karolis VAIVADA | - | ∅ | V25 | high | V25×3 | None → 13 |
+| 30 | Mantas ZUBAVICIUS | Klaipėdos Triatlono Klubas | ∅ | V40 | high | V40×2 | None → 8 |
+| 31 | Mindaugas JASAITIS | - | ∅ | V25 | high | V25×3 | None → 14 |
+| 32 | Justas KARDIŠAUSKAS | Lietuvos kariuomenė | ∅ | V25 | high | V25×2 | None → 15 |
+| 34 | Jonas KABELKA | TRItonas | ∅ | V25 | high | V25×2 | None → 16 |
+| 35 | Povilas SIMANAITIS | **HighPeaks Lietuva** | ∅ | V25 | high | V25×2 | None → 17 |
+| 38 | Artūras PETRAUSKAS | Marių Meškos | ∅ | V25 | high | V25×2 | None → 18 |
+| 39 | Gediminas MURAŠKA | - | ∅ | V25 | high | V25×3 | None → 19 |
+| 40 | Orinta MAURAITĖ | Marijampolės triatlono draugija | ∅ | M25 | high | M25×4 | None → * |
+| 41 | Domantas GRAZINSKIS | Marijampolės triatlono draugija | ∅ | V25 | high | V25×3 | None → 20 |
+| 44 | Rokas ULYS | Kas paremsit? | ∅ | V25 | high | V25×1 | None → 21 |
+| 46 | Julius BEZZUBOVAS | Stogaga Team | ∅ | V50 | high | V50×3 | None → 1 |
+| 47 | Simas DUNAUSKAS | Kago | ∅ | V25 | high | V25×3 | None → 22 |
+| 53 | Saulius VALATKA | Dan | ∅ | V25 | high | V25×3 | None → 23 |
+| 54 | Vytautas JAKUTIS | - | ∅ | V25 | high | V25×4 | None → 24 |
+| 55 | Saulius GLEBAUSKAS | Klaipėdos Triatlono Klubas | ∅ | V40 | high | V40×4 | None → 9 |
+| 56 | Tautvydas ŠVEDAS | - | ∅ | V25 | high | V25×4 | None → 25 |
+| 58 | Arūnė DAUNIENĖ | **HighPeaks Lietuva** | ∅ | M25 | high | M25×2 | None → 1 |
+| 59 | Artiomas BOGDANOVAS | BalticSystem | ∅ | V25 | high | V25×2 | None → 26 |
+| 60 | Algirdas STRIŪKA | IKIGAI team | ∅ | V60 | high | V60×4 | None → 1 |
+| 61 | Liudvikas ABRAITIS | **HighPeaks Lietuva** | ∅ | V40 | high | V40×3 | None → 10 |
+| 62 | Mindaugas ŽITKAUSKAS | FAKE CAKE | ∅ | V25 | high | V25×1 | None → 27 |
+| 64 | Vaidas MARTYŠIUS | - | ∅ | V25 | high | V25×2 | None → 28 |
+| 65 | Lina VASILJEVIENĖ | Aukštaitijos plaukimo - triatlono akademija | ∅ | M40 | high | M40×3 | None → 1 |
+| 68 | Gediminas ŠIMAVIČIUS | - | ∅ | V25 | high | V25×1 | None → 29 |
+| 69 | Indrė STATKĖ | Kauno Triatlono Klubas | ∅ | M40 | high | M40×1 | None → 2 |
+| 70 | Ingrida STANKUTĖ | **HighPeaks Lietuva** | ∅ | M25 | high | M25×1 | None → 2 |
+| 71 | Michailas ŽILIČIUS | MS Challenge Team | ∅ | V40 | high | V40×4 | None → 11 |
+| 74 | Dovilė ŽEMAITYTĖ | **HighPeaks Lietuva** | ∅ | M25 | high | M25×3 | None → 3 |
+| 75 | Vladyslav KULIEVICHIUS | - | ∅ | V25 | high | V25×3 | None → 30 |
+| 77 | Raimundas ZAMBACEVIČIUS | Kauno BMK | ∅ | V55 | high | V55×3 | None → 1 |
+| 80 | Ignas PAULIUKONIS | - | ∅ | V25 | high | V25×4 | None → 31 |
+| 81 | Lukas Vytautas DAGILIS | - | ∅ | V25 | high | V25×3 | None → 32 |
+| 82 | Darya BORASH | BTT | ∅ | M20 | high | M20×1 | None → 1 |
+| 83 | Gintautas BIEKŠA | Gilužio | ∅ | V50 | high | V50×3 | None → 2 |
+| 84 | Regimantas NORVILAS | Klaipėdos Triatlono Klubas | ∅ | V40 | high | V40×2 | None → 12 |
+| 86 | Monika ŠALTENYTĖ | - | ∅ | M20 | high | M20×3 | None → 2 |
+| 89 | Egidijus LUBYS | Klaipėdos Triatlono Klubas | ∅ | V25 | high | V25×4 | None → 33 |
+| 96 | Dovydas GUDAITIS | KAM/HighPeaks lietuva | ∅ | V25 | high | V25×2 | None → 34 |
+| 98 | Ieva VALUNTAITĖ | Love Streams Running | ∅ | M25 | high | M25×2 | None → 4 |
+| 102 | Adomas ARMONAS | - | ∅ | V25 | high | V25×1 | None → 35 |
+| 103 | Giedrius TUMA | Klaipėdos Triatlono Klubas | ∅ | V40 | high | V40×4 | None → 13 |
+| 104 | Virginijus ŠVEDAS | - | ∅ | V60 | high | V60×4 | None → 2 |
+| 105 | Tolmantas DAGYS | LSR | ∅ | V25 | high | V25×2 | None → 36 |
+| 110 | Jekaterina KOMISAROVA | - | ∅ | M25 | high | M25×1 | None → 5 |
+| 111 | Tomas TUMALOVIČIUS | Nuotykių Fabrikas | ∅ | V40 | high | V40×1 | None → 14 |
+| 113 | Romutis ANČLAUSKAS | Sporto mokykla Startas | ∅ | V55 | high | V55×4 | None → 2 |
+| 116 | Renata DAUJOTE | Klaipėdos Triatlono Klubas | ∅ | M50 | high | M50×1 | None → 1 |
+| 119 | Audrius ŠOPIS | Klaipėdos Triatlono Klubas | ∅ | V45 | high | V45×3 | None → 2 |
+| 121 | Edvinas BEINARTAS | Love Streams Running | ∅ | V40 | high | V40×1 | None → 15 |
+| 123 | Simonas DIRGELA | - | ∅ | V25 | high | V25×1 | None → 37 |
+| 129 | Vytautas PILIPAVIČIUS | **HighPeaks Lietuva** | ∅ | V60 | high | V60×4 | None → 3 |
+| 138 | Aistė LEŠČINSKAITĖ | Love Streams Running | ∅ | M25 | high | M25×1 | None → 6 |
+| 140 | Mantvydas LEVICKIS | - | ∅ | V25 | high | V25×1 | None → 38 |
+| 142 | Hartmut MITTELSTADT | HC Dzūkija Alytus | ∅ | V60 | high | V60×4 | None → 4 |
+| - | Sigita DANILEVICIENE | - | ∅ | M25 | high | M25×2 | None → None |
+| - | Žydrūnas APOLSKIS | Trakų Triatlono Būrelis | ∅ | V40 | high | V40×2 | None → None |
+| 1 | Zigmas REISAS | SSC BTT | ∅ | — | unmatched | — | None → * |
+| 4 | Oskaras GRIGONIS | SSC BTT | ∅ | — | unmatched | — | None → None |
+| 19 | Laimutis JUOZAPAVIČIUS | Lietuvos kariuomenė | ∅ | — | unmatched | — | None → None |
+| 22 | Aurimas SKIRGAILA | Vilniaus bėgimo klubas | ∅ | — | unmatched | — | None → None |
+| 29 | Mantas VAREIKA | Trakų Triatlono Būrelis | ∅ | — | unmatched | — | None → None |
+| 33 | Donatas KAZAKAUSKAS | **HighPeaks Lietuva** | ∅ | — | unmatched | — | None → None |
+| 36 | Paulius BUČIUS | - | ∅ | — | unmatched | — | None → None |
+| 37 | Evaldas MORKŪNAS | BTT | ∅ | — | unmatched | — | None → None |
+| 42 | Kamilė MURNEVAITĖ | SSC BTT | ∅ | — | unmatched | — | None → * |
+| 43 | Justas UŽA | Lietuvos kariuomenė | ∅ | — | unmatched | — | None → None |
+| 45 | Edgaras CVIRKA | **HighPeaks Lietuva** | ∅ | — | unmatched | — | None → None |
+| 48 | Simonas PAKETŪRAS | Danske Bank | ∅ | — | unmatched | — | None → None |
+| 49 | Darius KILBAUSKAS | Lietuvos kariuomenė | ∅ | — | unmatched | — | None → None |
+| 50 | Sonata PACKEVIČIŪTĖ | BTT | ∅ | — | unmatched | — | None → * |
+| 51 | Matas DOBRAVOLSKIS | Lietuvos kariuomenė | ∅ | — | unmatched | — | None → None |
+| 52 | Domantas STANKUS | - | ∅ | — | unmatched | — | None → None |
+| 57 | Linas JURKŠAS | - | ∅ | — | unmatched | — | None → None |
+| 63 | Paulius DAUKŠA | TRItonas | ∅ | — | unmatched | — | None → None |
+| 66 | Mindaugas EIDUKAITIS | - | ∅ | — | unmatched | — | None → None |
+| 67 | Virgilijus JODIŠIUS | - | ∅ | — | unmatched | — | None → None |
+| 72 | Laura ŠEŠKIENĖ | Wildsouls | ∅ | — | unmatched | — | None → None |
+| 73 | Tadas RUZGYS | - | ∅ | — | unmatched | — | None → None |
+| 76 | Aurimas BAGDANAVIČIUS | Trakų Triatlono Būrelis | ∅ | — | unmatched | — | None → None |
+| 78 | Danielius VITKAUSKAS | - | ∅ | — | unmatched | — | None → None |
+| 79 | Vytautas IVANAUSKAS | BTT | ∅ | — | unmatched | — | None → None |
+| 85 | Gediminas TOLEIKIS | Tobula instaliacija | ∅ | — | unmatched | — | None → None |
+| 87 | Linas KARTAVICIUS | - | ∅ | — | unmatched | — | None → None |
+| 88 | Renata MONTVILIENĖ | - | ∅ | — | unmatched | — | None → None |
+| 90 | Indrė VALAITĖ | Runglorious Bastards | ∅ | — | unmatched | — | None → None |
+| 91 | Martynas JURAVIČIUS | - | ∅ | — | unmatched | — | None → None |
+| 92 | Darius PRATUSEVIČIUS | - | ∅ | — | unmatched | — | None → None |
+| 93 | Povilas ŠATKUS | - | ∅ | — | unmatched | — | None → None |
+| 94 | Mantas JANKEVIČIUS | Panevėžio triatlono klubas | ∅ | — | unmatched | — | None → None |
+| 95 | Ligita SIMANAVIČIŪTĖ | KAM | ∅ | — | unmatched | — | None → None |
+| 97 | Darius MEŠKAUSKAS | - | ∅ | — | unmatched | — | None → None |
+| 99 | Mantvydas KRIAUČIŪNAS | Lietuvos kariuomenė | ∅ | — | unmatched | — | None → None |
+| 100 | Ugnė LUKAŠEVIČIŪTĖ | Mett | ∅ | — | unmatched | — | None → None |
+| 101 | Edgaras ŽEMAITAITIS | - | ∅ | — | unmatched | — | None → None |
+| 106 | Paulius VALIUNAS | - | ∅ | — | unmatched | — | None → None |
+| 107 | Mantas NARBUTAS | Lietuvos kariuomenė | ∅ | — | unmatched | — | None → None |
+| 108 | Ieva LABALAUKYTĖ | Love Streams Running | ∅ | — | unmatched | — | None → None |
+| 109 | Ramūnas KEREVIČIUS | Lietuvos kariuomenė | ∅ | — | unmatched | — | None → None |
+| 112 | Viktorija PETRAITYTĖ | Lietuvos kariuomenė | ∅ | — | unmatched | — | None → None |
+| 114 | Mikhail VOITSIK | Azot running | ∅ | — | unmatched | — | None → None |
+| 115 | Mantas NAVICKAS | Tobula instaliacija | ∅ | — | unmatched | — | None → None |
+| 117 | Julia AIMERS | Team Triumph | ∅ | — | unmatched | — | None → None |
+| 118 | Petras GRISKEVICIUS | Riding my bicycle | ∅ | — | unmatched | — | None → None |
+| 120 | Antanas JABLONSKIS | Tarmozai | ∅ | — | unmatched | — | None → None |
+| 122 | Nerijus ŠUKYS | MK Vytis | ∅ | — | unmatched | — | None → None |
+| 124 | Lina ALIŠAUSKAITĖ | - | ∅ | — | unmatched | — | None → None |
+| 125 | Domininkas VIRBICKAS | - | ∅ | — | unmatched | — | None → None |
+| 126 | Paulius AUGULIS | KAM | ∅ | — | unmatched | — | None → None |
+| 127 | Aleksandras IVANOVAS | Svarbu nenuskęsti ) | ∅ | — | unmatched | — | None → None |
+| 128 | Agne GECEVICE | - | ∅ | — | unmatched | — | None → None |
+| 130 | Rolandas JUODZBALIS | LSR | ∅ | — | unmatched | — | None → None |
+| 131 | Jonathan WALTON | - | ∅ | — | unmatched | — | None → None |
+| 132 | Ada ZIEMYTE | - | ∅ | — | unmatched | — | None → None |
+| 133 | Dainius PODOLINSKIS | savora.lt | ∅ | — | unmatched | — | None → None |
+| 134 | Radvilė KERŠEVIČIŪTĖ | - | ∅ | — | unmatched | — | None → None |
+| 135 | Juozapas KILIKEVIČIUS | - | ∅ | — | unmatched | — | None → None |
+| 136 | Jokūbas KURLINKUS | Lietuvos kariuomenė | ∅ | — | unmatched | — | None → None |
+| 137 | Jonas PALAČIONIS | - | ∅ | — | unmatched | — | None → None |
+| 139 | Joris DAUTARTAS | Sveikiausia Asociacija | ∅ | — | unmatched | — | None → None |
+| 141 | Lukas VAŠKEVIČIUS | - | ∅ | — | unmatched | — | None → None |
+| 143 | Vilius BILOTA | - | ∅ | — | unmatched | — | None → None |
+| 144 | Tomas GINTALAS | - | ∅ | — | unmatched | — | None → None |
+| - | Austeja DENISOVAITE | Real Club Mediterraneo | ∅ | — | unmatched | — | None → None |
+| - | Constantine LAGOSHA | Volvere | ∅ | — | unmatched | — | None → None |
+| - | Tomas RUMELAITIS | - | ∅ | — | unmatched | — | None → None |
 
 ### 2022
 
